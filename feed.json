@@ -1,0 +1,29 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "To learn more",
+    "subtitle": "",
+    "icon": "https://maikire.github.io/images/favicon.ico",
+    "description": "",
+    "home_page_url": "https://maikire.github.io",
+    "items": [
+        {
+            "id": "https://maikire.github.io/2022/12/07/shoka-note/",
+            "url": "https://maikire.github.io/2022/12/07/shoka-note/",
+            "title": "Shoka_note",
+            "date_published": "2022-12-07T11:52:03.000Z",
+            "content_html": "<h1 id=\"hash-of-email指的是什么呢\"><a class=\"anchor\" href=\"#hash-of-email指的是什么呢\">#</a> hash of email 指的是什么呢</h1>\n<p>是指邮箱的 hash 值，可以看评论者的头像 url，比如 https://gravatar.loli.net/avatar/614d5030c7301b12be113b3f08114171?size=80&amp;d=mp<br />\n 那么 614d5030c7301b12be113b3f08114171 就是 hash of your email</p>\n<p>需要在 <span class=\"exturl\" data-url=\"aHR0cHM6Ly9lbi5ncmF2YXRhci5jb20=\">Gravatar</span> 中添加自己的图片，这样才能拥有 头像 url<br />\n 如果你修改了头像后发现没有更新，请不要慌张，因为 <span class=\"exturl\" data-url=\"aHR0cHM6Ly9lbi5ncmF2YXRhci5jb20=\">Gravatar</span> 有<span class=\"pink\">七天</span>的缓存期，安静的等待吧～</p>\n",
+            "tags": [
+                "Shoka",
+                "Shoka"
+            ]
+        },
+        {
+            "id": "https://maikire.github.io/2022/12/05/hello-world/",
+            "url": "https://maikire.github.io/2022/12/05/hello-world/",
+            "title": "Hello World",
+            "date_published": "2022-12-05T09:00:24.561Z",
+            "content_html": "<h1 id=\"this-is-a-test-article\"><a class=\"anchor\" href=\"#this-is-a-test-article\">#</a> This is a test article</h1>\n<p>Welcome to <span class=\"exturl\" data-url=\"aHR0cHM6Ly9oZXhvLmlvLw==\">Hexo</span>! This is your very first post. Check <span class=\"exturl\" data-url=\"aHR0cHM6Ly9oZXhvLmlvL2RvY3Mv\">documentation</span> for more info. If you get any problems when using Hexo, you can find the answer in <span class=\"exturl\" data-url=\"aHR0cHM6Ly9oZXhvLmlvL2RvY3MvdHJvdWJsZXNob290aW5nLmh0bWw=\">troubleshooting</span> or you can ask me on <span class=\"exturl\" data-url=\"aHR0cHM6Ly9naXRodWIuY29tL2hleG9qcy9oZXhvL2lzc3Vlcw==\">GitHub</span>.</p>\n<h2 id=\"quick-start\"><a class=\"anchor\" href=\"#quick-start\">#</a> Quick Start</h2>\n<h3 id=\"create-a-new-post\"><a class=\"anchor\" href=\"#create-a-new-post\">#</a> Create a new post</h3>\n<figure class=\"highlight bash\"><figcaption data-lang=\"bash\"><span>h</span></figcaption><table><tr><td data-num=\"1\"></td><td><pre>$ hexo new <span class=\"token string\">\"My New Post\"</span></pre></td></tr></table></figure><p>More info: <span class=\"exturl\" data-url=\"aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvd3JpdGluZy5odG1s\">Writing</span></p>\n<h3 id=\"run-server\"><a class=\"anchor\" href=\"#run-server\">#</a> Run server</h3>\n<figure class=\"highlight bash\"><figcaption data-lang=\"bash\"><span>h</span></figcaption><table><tr><td data-num=\"1\"></td><td><pre>$ hexo server</pre></td></tr></table></figure><p>More info: <span class=\"exturl\" data-url=\"aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvc2VydmVyLmh0bWw=\">Server</span></p>\n<h3 id=\"generate-static-files\"><a class=\"anchor\" href=\"#generate-static-files\">#</a> Generate static files</h3>\n<figure class=\"highlight bash\"><figcaption data-lang=\"bash\"><span>h</span></figcaption><table><tr><td data-num=\"1\"></td><td><pre>$ hexo generate</pre></td></tr></table></figure><p>More info: <span class=\"exturl\" data-url=\"aHR0cHM6Ly9oZXhvLmlvL2RvY3MvZ2VuZXJhdGluZy5odG1s\">Generating</span></p>\n<h3 id=\"deploy-to-remote-sites\"><a class=\"anchor\" href=\"#deploy-to-remote-sites\">#</a> Deploy to remote sites</h3>\n<figure class=\"highlight bash\"><figcaption data-lang=\"bash\"><span>h</span></figcaption><table><tr><td data-num=\"1\"></td><td><pre>$ hexo deploy</pre></td></tr></table></figure><p>More info: <span class=\"exturl\" data-url=\"aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvb25lLWNvbW1hbmQtZGVwbG95bWVudC5odG1s\">Deployment</span></p>\n",
+            "tags": []
+        }
+    ]
+}
