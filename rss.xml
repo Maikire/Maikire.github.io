@@ -19,11 +19,32 @@
             <category term="Shoka" scheme="https://maikire.github.io/categories/Shoka/" />
             <category term="Shoka" scheme="https://maikire.github.io/tags/Shoka/" />
             <pubDate>Wed, 07 Dec 2022 19:52:03 +0800</pubDate>
-            <description><![CDATA[ &lt;h1 id=&#34;hash-of-email指的是什么呢&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#hash-of-email指的是什么呢&#34;&gt;#&lt;/a&gt; hash of email 指的是什么呢&lt;/h1&gt;
-&lt;p&gt;是指邮箱的 hash 值，可以看评论者的头像 url，比如 https://gravatar.loli.net/avatar/614d5030c7301b12be113b3f08114171?size=80&amp;amp;d=mp&lt;br /&gt;
- 那么 614d5030c7301b12be113b3f08114171 就是 hash of your email&lt;/p&gt;
-&lt;p&gt;需要在 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9lbi5ncmF2YXRhci5jb20=&#34;&gt;Gravatar&lt;/span&gt; 中添加自己的图片，这样才能拥有 头像 url&lt;br /&gt;
- 如果你修改了头像后发现没有更新，请不要慌张，因为 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9lbi5ncmF2YXRhci5jb20=&#34;&gt;Gravatar&lt;/span&gt; 有&lt;span class=&#34;pink&#34;&gt;七天&lt;/span&gt;的缓存期，安静的等待吧～&lt;/p&gt;
+            <description><![CDATA[ &lt;h1 id=&#34;shoka主题的评论功能中-hash-of-email-指的是什么呢&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#shoka主题的评论功能中-hash-of-email-指的是什么呢&#34;&gt;#&lt;/a&gt; Shoka 主题的评论功能中 hash of email 指的是什么呢？&lt;/h1&gt;
+&lt;p&gt;是指邮箱的 hash 值&lt;/p&gt;
+&lt;div class=&#34;note primary&#34;&gt;
+&lt;p&gt;获得邮箱的 hash 值&lt;/p&gt;
+&lt;/div&gt;
+&lt;details class=&#34;primary&#34;&gt;&lt;summary&gt;通过加密算法获取&lt;/summary&gt;&lt;div&gt;
+&lt;ul&gt;
+&lt;li&gt;使用 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly90b29sLm9zY2hpbmEubmV0L2VuY3J5cHQ/dHlwZT0y&#34;&gt;加密工具&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;选择&lt;span class=&#34;blue&#34;&gt;哈希 / 散列&lt;/span&gt;，然后输入你的邮箱&lt;/li&gt;
+&lt;li&gt;算法选择 &lt;span class=&#34;blue&#34;&gt;MD5&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;生成的结果就是我们想要的 hash 值&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;&lt;/details&gt;
+&lt;details class=&#34;primary&#34;&gt;&lt;summary&gt;通过头像url获取&lt;/summary&gt;&lt;div&gt;
+&lt;ul&gt;
+&lt;li&gt;可以看评论者的头像 url，比如 https://gravatar.loli.net/avatar/614d5030c7301b12be113b3f08114171?size=80&amp;amp;d=mp&lt;br /&gt;
+ 那么 614d5030c7301b12be113b3f08114171 就是 hash of your email&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;&lt;/details&gt;
+&lt;details class=&#34;primary&#34;&gt;&lt;summary&gt;自定义头像&lt;/summary&gt;&lt;div&gt;
+&lt;ul&gt;
+&lt;li&gt;需要在 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9lbi5ncmF2YXRhci5jb20=&#34;&gt;Gravatar&lt;/span&gt; 中添加自己的图片，使你的邮箱与你的头像绑定&lt;/li&gt;
+&lt;li&gt;如果你修改了头像后发现没有更新，请不要慌张，因为 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9lbi5ncmF2YXRhci5jb20=&#34;&gt;Gravatar&lt;/span&gt; 有&lt;span class=&#34;blue&#34;&gt;七天&lt;/span&gt;的缓存期，安静的等待吧～&lt;/li&gt;
+&lt;li&gt;如果等了好几天还是没有更新，那就是 Gravatar 被墙了，继续等吧&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;&lt;/details&gt;
  ]]></description>
         </item>
         <item>
