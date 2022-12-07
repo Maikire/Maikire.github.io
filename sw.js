@@ -10,7 +10,7 @@
 
 'use strict';
 
-var precacheConfig = [["/2022/12/05/hello-world/index.html","b44c169a88daa14005aa60165ebdaa36"],["/404.html","1ef9ba1613ba93b45d36c06151f6c64b"],["/about/index.html","a1d5eb1814ca82c230679267e179e9fb"],["/archives/2022/12/index.html","6ee091620d3425cef8ea850c7b4fab60"],["/archives/2022/index.html","c8f02aee7cd4de4c9d55103522e0e771"],["/archives/index.html","ab2b3698972e496e8b2d7da370ce0259"],["/categories/index.html","4132d5183d7bdb3ad38dbe954eac9721"],["/css/app.css","2040966383abb0593cff54b109225c76"],["/css/comment.css","ad7a38d35482b1ad6e2f6b607a3544cd"],["/css/mermaid.css","5d6c13df834fa72c1652cf6ec46096dd"],["/images/404.png","52d6ca721e50bf3fd2f09e0d2ebe6f6c"],["/images/algolia_logo.svg","fd40b88ac5370a5353a50b8175c1f367"],["/images/alipay.png","df9ce905d2c1bd8511ebee531baae0ab"],["/images/apple-touch-icon.png","c7e8e0062b8300b2134e6ae905db522b"],["/images/avatar.jpg","ad941c61e2db1d2cf7c96fd622dae50e"],["/images/logo.svg","9fa6ef06ed8e8abf09a6197688bef461"],["/images/paypal.png","3652ad75520a9765da95f1408c4d3981"],["/images/play_disc.png","13a96370213881a22cfaa05bcaf1953c"],["/images/play_needle.png","ed199c599562491c1c27de4a8f3daa6f"],["/images/search.png","e576cdbf6d4df3f4587202d4795e0887"],["/images/wechatpay.png","33d5059cbc10c7f30cf7472a3f3fa2ea"],["/index.html","03769fd283499738c97669fe0bfed374"],["/js/app.js","4b94c2524965943a6ac61ab1a3cbf387"],["/sw-register.js","a13f96457940bce8d970815e79e858db"],["/tags/index.html","5a7bf43cd20af6dde8a1a845612f43c9"]];
+var precacheConfig = [];
 var cacheName = 'sw-precache-v3--' + (self.registration ? self.registration.scope : '');
 var firstRegister = 1; // 默认1是首次安装SW， 0是SW更新
 
