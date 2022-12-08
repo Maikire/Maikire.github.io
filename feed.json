@@ -7,9 +7,9 @@
     "home_page_url": "https://maikire.github.io",
     "items": [
         {
-            "id": "https://maikire.github.io/2022/12/07/shoka-note/",
-            "url": "https://maikire.github.io/2022/12/07/shoka-note/",
-            "title": "Shoka_note",
+            "id": "https://maikire.github.io/2022/12/07/Shoka/shoka-note/",
+            "url": "https://maikire.github.io/2022/12/07/Shoka/shoka-note/",
+            "title": "使用Shoka主题时可能会遇到的问题",
             "date_published": "2022-12-07T11:52:03.000Z",
             "content_html": "<h1 id=\"shoka主题的评论功能中-hash-of-email-指的是什么呢\"><a class=\"anchor\" href=\"#shoka主题的评论功能中-hash-of-email-指的是什么呢\">#</a> Shoka 主题的评论功能中 hash of email 指的是什么呢？</h1>\n<p>是指邮箱的 hash 值</p>\n<div class=\"note primary\">\n<p>获得邮箱的 hash 值</p>\n</div>\n<details class=\"primary\"><summary>通过加密算法获取</summary><div>\n<ul>\n<li>使用 <span class=\"exturl\" data-url=\"aHR0cHM6Ly90b29sLm9zY2hpbmEubmV0L2VuY3J5cHQ/dHlwZT0y\">加密工具</span></li>\n<li>选择<span class=\"blue\">哈希 / 散列</span>，然后输入你的邮箱</li>\n<li>算法选择 <span class=\"blue\">MD5</span></li>\n<li>生成的结果就是我们想要的 hash 值</li>\n</ul>\n</div></details>\n<details class=\"primary\"><summary>通过头像url获取</summary><div>\n<ul>\n<li>可以看评论者的头像 url，比如 https://gravatar.loli.net/avatar/614d5030c7301b12be113b3f08114171?size=80&amp;d=mp<br />\n 那么 614d5030c7301b12be113b3f08114171 就是 hash of your email</li>\n</ul>\n</div></details>\n<details class=\"primary\"><summary>自定义头像</summary><div>\n<ul>\n<li>需要在 <span class=\"exturl\" data-url=\"aHR0cHM6Ly9lbi5ncmF2YXRhci5jb20=\">Gravatar</span> 中添加自己的图片，使你的邮箱与你的头像绑定</li>\n<li>如果你修改了头像后发现没有更新，请不要慌张，因为 <span class=\"exturl\" data-url=\"aHR0cHM6Ly9lbi5ncmF2YXRhci5jb20=\">Gravatar</span> 有<span class=\"blue\">七天</span>的缓存期，安静的等待吧～</li>\n<li>如果等了好几天还是没有更新，那就是 Gravatar 被墙了，继续等吧</li>\n</ul>\n</div></details>\n",
             "tags": [
