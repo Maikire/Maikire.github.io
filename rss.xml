@@ -123,7 +123,7 @@ UIEventListener 提供所有能用到的 UI 事件（带事件参数类）&lt;/l
 &lt;h3 id=&#34;ui管理类-uimanager&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#ui管理类-uimanager&#34;&gt;#&lt;/a&gt; UI 管理类 UIManager&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;因为只需要一个 UIManager 的实例，所以可以使用单例模式。&lt;br /&gt;
-单例模式的相关内容，请看这篇文章：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL21haWtpcmUueHl6LzIwMjMvMDMvMjQvVW5pdHkvRGVzaWduUGF0dGVybnMvJUU1JThEJTk1JUU0JUJFJThCJUU2JUE4JUExJUU1JUJDJThGLw==&#34;&gt;http://maikire.xyz/2023/03/24/Unity/DesignPatterns/ 单例模式 /&lt;/span&gt;&lt;/li&gt;
+单例模式的相关内容，请看这篇文章：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL21haWtpcmUueHl6LzIwMjMvMDMvMjQvRGVzaWduUGF0dGVybnMvJUU1JThEJTk1JUU0JUJFJThCJUU2JUE4JUExJUU1JUJDJThGLw==&#34;&gt;http://maikire.xyz/2023/03/24/DesignPatterns/ 单例模式 /&lt;/span&gt;&lt;/li&gt;
 &lt;li&gt;使用静态的字典来储存所有的 UI&lt;/li&gt;
 &lt;li&gt;提供查找、添加的功能&lt;/li&gt;
 &lt;/ul&gt;
