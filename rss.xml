@@ -117,8 +117,7 @@
 &lt;ul&gt;
 &lt;li&gt;技能释放器提供释放技能、寻找目标、造成影响效果、回收技能等方法&lt;/li&gt;
 &lt;li&gt;技能释放器是抽象类，子类是具体的释放器（例如：指定方向释放器）。子类需要用在技能的预制件上。&lt;/li&gt;
-&lt;li&gt;技能释放器需要调用选区算法、影响效果等接口的实现类。实现类都是普通的 CSharp 类，所以可以做一个工厂类。工厂类提供静态方法，使用&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL21haWtpcmUueHl6LzIwMjMvMDMvMjgvQ1NoYXJwL0NTaGFycEJhc2ljcy8lRTUlOEYlOEQlRTUlQjAlODQlRUYlQkMlODhSZWZsZWN0aW9uJUVGJUJDJTg5Lw==&#34;&gt;反射&lt;/span&gt;创建对应的实现类。&lt;br /&gt;
-如图：&lt;img data-src=&#34;Deployer_1.png&#34; alt=&#34;img&#34; /&gt;&lt;/li&gt;
+&lt;li&gt;技能释放器需要调用选区算法、影响效果等接口的实现类。实现类都是普通的 CSharp 类，所以可以做一个工厂类。工厂类提供静态方法，使用&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL21haWtpcmUueHl6LzIwMjMvMDMvMjgvQ1NoYXJwL0NTaGFycEJhc2ljcy8lRTUlOEYlOEQlRTUlQjAlODQlRUYlQkMlODhSZWZsZWN0aW9uJUVGJUJDJTg5Lw==&#34;&gt;反射&lt;/span&gt;创建对应的实现类。&lt;/li&gt;
 &lt;li&gt;使用反射创建对象，所以需要有命名规则：
 &lt;ul&gt;
 &lt;li&gt;选区对象命名规则：ARPGDemo.Skill. + SelectorType + AttackSelector&lt;/li&gt;
