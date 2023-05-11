@@ -14,7 +14,7 @@
         <title>一个简单的ARPG技能框架</title>
         <link rel="alternate" href="https://maikire.github.io/2023/05/05/Unity/UnityFramework/%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84ARPG%E6%8A%80%E8%83%BD%E6%A1%86%E6%9E%B6/"/>
         <content type="html">&lt;h1 id=&#34;观前提醒&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#观前提醒&#34;&gt;#&lt;/a&gt; 观前提醒&lt;/h1&gt;
-&lt;p&gt;项目会在 GitHub 中开源，链接：&lt;/p&gt;
+&lt;p&gt;项目会在 GitHub 中开源，链接：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL01haWtpcmUvVW5pdHkvdHJlZS9tYWluL1VuaXR5RnJhbWV3b3JrL0ElMjBTaW1wbGUlMjBTa2lsbHMlMjBGcmFtZXdvcms=&#34;&gt;https://github.com/Maikire/Unity/tree/main/UnityFramework/A Simple Skills Framework&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;如果有什么问题或想法，欢迎各位在评论区留言。&lt;/p&gt;
 &lt;h1 id=&#34;做框架之前的一些准备&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#做框架之前的一些准备&#34;&gt;#&lt;/a&gt; 做框架之前的一些准备&lt;/h1&gt;
 &lt;p&gt;&lt;span class=&#34;label info&#34;&gt;在开始写框架之前需要有一些准备好的资源&lt;/span&gt;&lt;/p&gt;
