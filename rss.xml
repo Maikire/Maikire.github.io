@@ -654,7 +654,9 @@ C# 中使用事件机制实现线程间的通信。&lt;/p&gt;
             <category term="CSharpToolClass" scheme="https://maikire.github.io/categories/CSharp/CSharpToolClass/" />
             <category term="ArrayHelper" scheme="https://maikire.github.io/tags/ArrayHelper/" />
             <pubDate>Mon, 27 Mar 2023 20:00:00 +0800</pubDate>
-            <description><![CDATA[ &lt;h1 id=&#34;代码&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#代码&#34;&gt;#&lt;/a&gt; 代码&lt;/h1&gt;
+            <description><![CDATA[ &lt;h1 id=&#34;目的&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#目的&#34;&gt;#&lt;/a&gt; 目的&lt;/h1&gt;
+&lt;p&gt;C# 下传统的数组不支持 Linq 库，所以制作一个助手类，用来实现 Linq 库中的部分功能&lt;/p&gt;
+&lt;h1 id=&#34;代码&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#代码&#34;&gt;#&lt;/a&gt; 代码&lt;/h1&gt;
 &lt;p&gt;&lt;span class=&#34;label info&#34;&gt;需要提前知道的知识点&lt;/span&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;委托&lt;/li&gt;
