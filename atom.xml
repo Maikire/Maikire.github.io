@@ -986,7 +986,7 @@ UIEventListener 提供所有能用到的 UI 事件（带事件参数类）&lt;/l
         <link rel="alternate" href="https://maikire.github.io/2023/01/13/Unity/UnityGames/Unity2DGames/%E5%88%B6%E4%BD%9C2D%E5%B0%8F%E6%B8%B8%E6%88%8F02%E2%80%94%E2%80%94%E9%98%B2%E5%8D%AB%E5%9F%8E%E5%A0%A1/"/>
         <content type="html">&lt;h1 id=&#34;观前提醒&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#观前提醒&#34;&gt;#&lt;/a&gt; 观前提醒&lt;/h1&gt;
 &lt;p&gt;项目会在 GitHub 中开源，链接：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL01haWtpcmUvVW5pdHlHYW1lRGVtby90cmVlL21haW4vMDEtMDI=&#34;&gt;https://github.com/Maikire/UnityGameDemo/tree/main/01-02&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;本次要实现的小游戏主要面向有一定基础的初学者。&lt;/p&gt;
+&lt;p&gt;本次制作的小游戏很适合初学者。&lt;/p&gt;
 &lt;p&gt;如果有什么问题或想法，欢迎各位在评论区留言。&lt;/p&gt;
 &lt;h1 id=&#34;小游戏&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#小游戏&#34;&gt;#&lt;/a&gt; 小游戏&lt;/h1&gt;
 &lt;p&gt;&lt;img data-src=&#34;interface.gif&#34; alt=&#34;img&#34; /&gt;&lt;/p&gt;
@@ -1130,9 +1130,10 @@ UIEventListener 提供所有能用到的 UI 事件（带事件参数类）&lt;/l
         <link rel="alternate" href="https://maikire.github.io/2023/01/12/Unity/UnityGames/Unity2DGames/%E5%88%B6%E4%BD%9C2D%E5%B0%8F%E6%B8%B8%E6%88%8F01%E2%80%94%E2%80%94%E9%A3%9E%E8%A1%8C%E6%8C%91%E6%88%98/"/>
         <content type="html">&lt;h1 id=&#34;观前提醒&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#观前提醒&#34;&gt;#&lt;/a&gt; 观前提醒&lt;/h1&gt;
 &lt;p&gt;项目会在 GitHub 中开源，链接：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL01haWtpcmUvVW5pdHlHYW1lRGVtby90cmVlL21haW4vMDEtMDI=&#34;&gt;https://github.com/Maikire/UnityGameDemo/tree/main/01-02&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;本次要实现的小游戏主要面向有一定基础的初学者。&lt;/p&gt;
+&lt;p&gt;本次制作的小游戏很适合初学者。&lt;/p&gt;
 &lt;p&gt;如果有什么问题或想法，欢迎各位在评论区留言。&lt;/p&gt;
 &lt;h1 id=&#34;小游戏&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#小游戏&#34;&gt;#&lt;/a&gt; 小游戏&lt;/h1&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL21haWtpcmUueHl6L2p1bXAtZ2FtZS1mbGlnaHQtY2hhbGxlbmdlLw==&#34;&gt;点我开始游戏&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;interface.gif&#34; alt=&#34;img&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;如上面所展示的，这是一种很常见很简单的小游戏，接下来让我们一步一步地来实现它。&lt;/p&gt;
 &lt;h2 id=&#34;角色控制&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#角色控制&#34;&gt;#&lt;/a&gt; 角色控制&lt;/h2&gt;
