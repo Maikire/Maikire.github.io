@@ -227,13 +227,10 @@
 &lt;li&gt;
 &lt;p&gt;使用框架&lt;/p&gt;
 &lt;p&gt;优点：较低的代码重复度、数据集中管理、较高的可扩展性、易于维护和调试、更好的分配任务、更好的并行开发&lt;/p&gt;
-&lt;p&gt;缺点：代码编写较难、游戏内容较少时，框架可能会起到反效果&lt;/p&gt;
-&lt;p&gt;适用性：适合制作一些内容较多的大型游戏&lt;/p&gt;
+&lt;p&gt;缺点：代码编写较难&lt;/p&gt;
+&lt;p&gt;适用性：适合制作一些内容较多的游戏&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&#34;note primary&#34;&gt;
-&lt;p&gt;ARPG 类型的游戏需要使用框架&lt;/p&gt;
-&lt;/div&gt;
 &lt;h2 id=&#34;框架设计&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#框架设计&#34;&gt;#&lt;/a&gt; 框架设计&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;技能释放流程
