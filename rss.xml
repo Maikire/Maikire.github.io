@@ -692,7 +692,7 @@ C# 中使用事件机制实现线程间的通信。&lt;/p&gt;
 &lt;li&gt;多播 (multicast) 委托&lt;/li&gt;
 &lt;li&gt;多线程
 &lt;ul&gt;
-&lt;li&gt;多线程不在本篇文章的考虑范围内，下面给出一些简单的介绍，详细内容请参阅其他文章。&lt;/li&gt;
+&lt;li&gt;多线程不是本篇文章的重点，下面给出一些简单的介绍，详细内容请参阅其他文章。&lt;/li&gt;
 &lt;li&gt;同步与异步的简介&lt;br /&gt;
 &lt;img data-src=&#34;synchronous-and-asynchronous.png&#34; alt=&#34;img&#34; /&gt;&lt;/li&gt;
 &lt;li&gt;同步调用与异步调用的对比
