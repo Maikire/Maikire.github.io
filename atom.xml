@@ -621,7 +621,7 @@
 &lt;p&gt;具有多个返回点 (yield)，可以在特定时机分步执行的函数。。&lt;/p&gt;
 &lt;h2 id=&#34;原理&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#原理&#34;&gt;#&lt;/a&gt; 原理&lt;/h2&gt;
 &lt;p&gt;协程运行在 Unity 的主线程中，Unity 每帧处理 GameObject 中的协同函数，直到函数执行完毕。&lt;/p&gt;
-&lt;p&gt;当一个协同函数启动时，本质是创建迭代器对象，调用 MoveNext 方法，执行到 yield 暂时退出，待满足条件后再次调用 MoveNext 方法，执行后续代码，直至遇到下一个 yield 为止，如此循环至整个函数结束。&lt;/p&gt;
+&lt;p&gt;当一个协同函数启动时，本质是创建&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9tYWlraXJlLnh5ei8yMDIzLzAzLzI4L0NTaGFycC9DU2hhcnBCYXNpY3MvJUU2JTlFJTlBJUU0JUI4JUJFJUU1JTk5JUE4JUVGJUJDJTg4RW51bWVyYXRvciVFRiVCQyU4OS9pbmRleC5odG1sP19zdy1wcmVjYWNoZT1jYWYyNmVjMGE3OGYwN2ZiYzRkMGYzZjhlMjhkNTU2NA==&#34;&gt;迭代器&lt;/span&gt;对象，调用 MoveNext () 方法，执行到 yield 暂时退出，待满足条件后再次调用 MoveNext () 方法，执行后续代码，直至遇到下一个 yield 为止，如此循环至整个函数结束。&lt;/p&gt;
 &lt;h2 id=&#34;作用&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#作用&#34;&gt;#&lt;/a&gt; 作用&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;延时调用&lt;/li&gt;
