@@ -1062,7 +1062,7 @@ C# 中使用事件机制实现线程间的通信。&lt;/p&gt;
 &lt;li&gt;如果脚本没有挂载到物体上，需要新创建一个物体，创建物体会立即执行 Awake ()，静态字段会被赋值&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;如果其他类的 Awake () 的执行时机先于这个类的 Awake ()，并且在 Awake () 中调用了这个属性，为了保证类的单一性，需要使用 FindObjectOfType&amp;lt;T&amp;gt;()（这是 Unity 的 API）找到这个类&lt;/li&gt;
+&lt;li&gt;如果其他类的 Awake () 的执行时机先于这个类的 Awake ()，并且在 Awake () 中调用了这个属性，此时静态字段为空，需要使用 FindObjectOfType&amp;lt;T&amp;gt;()（这是 Unity 的 API）找到这个类&lt;/li&gt;
 &lt;li&gt;注：如果需要让辅助线程调用单例类，则必须把单例类的脚本挂载到物体上，并且辅助线程不能在 Awake () 之前调用单例类。否则，辅助线程将会调用 Unity 的 API，但是辅助线程不能调用 Unity 的 API（这是 Unity 的规定）&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;使用&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#使用&#34;&gt;#&lt;/a&gt; 使用&lt;/h2&gt;
