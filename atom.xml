@@ -305,15 +305,19 @@ Color：Blue&lt;/p&gt;
 &lt;li&gt;RGB compressed DXT1|BC1 sRGB：使用 RGB compressed DXT1 或 BC1 sRGB&lt;/li&gt;
 &lt;li&gt;其他的属性与 sprite 图片相同&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;rgb-compressed-dxt1-和-bc1-srgb&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#rgb-compressed-dxt1-和-bc1-srgb&#34;&gt;#&lt;/a&gt; RGB compressed DXT1 和 BC1 sRGB&lt;/h2&gt;
-&lt;p&gt;RGB compressed DXT1（RGB 压缩的 DXT1）是一种图像压缩格式，使用 DXT 压缩算法对红色 (R)、绿色 (G)、蓝色 (B) 通道进行压缩。DXT1 是一种基于颜色块的压缩算法，常用于实时计算机图形和游戏开发中。&lt;br /&gt;
-DXT1 压缩算法将每个 4×4 像素块编码为 8 个字节（64 位），以实现有效的数据压缩。它使用基于颜色的压缩技术来减少存储需求和传输带宽，同时尽可能地保持图像细节。&lt;br /&gt;
-在 RGB compressed DXT1 中，每个颜色块由两种基本颜色（C0 和 C1）和一个调色板所组成。通过这两种基本颜色和调色板索引，可以对每个像素进行编码。此外，DXT1 还使用一种渐变算法，以确定两种基本颜色之间的中间颜色。&lt;br /&gt;
-DXT1 压缩算法能够实现较高的压缩比，但会引入一定程度的图像失真。然而，在实时图形应用中，这种压缩算法被广泛使用，因为它可以节省显存和提高渲染性能，同时对于大多数场景中的肉眼观察者来说，图像质量仍然是可接受的。&lt;/p&gt;
-&lt;p&gt;BC1（Block Compression 1）sRGB 是一种基于颜色块的压缩格式，用于纹理压缩和图形渲染。它是 DirectX 中的一种标准压缩格式，也被称为 DXT1。&lt;br /&gt;
-BC1 sRGB 在功能上类似于 RGB compressed DXT1，但增加了 sRGB 颜色空间的支持。sRGB 颜色空间是一种广泛用于显示设备的标准颜色空间，通过对每个颜色通道进行非线性调整，提供更好的亮度和颜色映射。sRGB 颜色空间可以提供更准确、更逼真的颜色表示。&lt;br /&gt;
-BC1 sRGB 使用与 BC1 相同的压缩算法，将每个 4×4 像素块压缩为 8 个字节（64 位）。它使用两种基本颜色（C0 和 C1）和一个调色板来编码颜色信息，并使用渐变算法确定中间颜色。然而，与普通的 BC1 相比，BC1 sRGB 在颜色解码时会先将颜色转换到 sRGB 颜色空间，以提供更准确的颜色表示。&lt;br /&gt;
-BC1 sRGB 广泛用于游戏开发和实时图形应用中，特别是在需要精确和逼真的颜色呈现的情况下。通过结合颜色压缩和 sRGB 颜色空间，BC1 sRGB 可以在保持图像质量的同时降低资源消耗和提高渲染性能。&lt;/p&gt;
+&lt;h2 id=&#34;rgb-compressed-dxt1dxt5-和-bc1-srgb&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#rgb-compressed-dxt1dxt5-和-bc1-srgb&#34;&gt;#&lt;/a&gt; RGB compressed DXT1/DXT5 和 BC1 sRGB&lt;/h2&gt;
+&lt;p&gt;&lt;span class=&#34;label info&#34;&gt;RGB compressed DXT1/DXT5&lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;RGB compressed DXT1（RGB 压缩的 DXT1）是一种图像压缩格式，使用 DXT 压缩算法对红色 (R)、绿色 (G)、蓝色 (B) 通道进行压缩。DXT1 是一种基于颜色块的压缩算法，常用于实时计算机图形和游戏开发中。&lt;/li&gt;
+&lt;li&gt;RGB compressed DXT1（也称为 BC1）压缩格式只支持颜色通道，不包含透明度信息。相对于 RGB compressed DXT5，它提供较低的压缩比和较低的图像质量。因此，它适用于不需要透明度信息的纹理，如大部分的颜色贴图、环境贴图等。&lt;/li&gt;
+&lt;li&gt;RGB compressed DXT5（也称为 BC3）压缩格式支持颜色和透明度通道，因此适用于包含透明度信息的纹理。它提供更高的压缩比和更高的图像质量，因为它使用更复杂的压缩算法来保持透明度通道的准确性。这使得 RGB compressed DXT5 适用于需要保留更多细节和精确度的纹理，如包含透明度的角色纹理、粒子纹理等。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;span class=&#34;label info&#34;&gt;BC1 sRGB&lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;BC1 sRGB 是一种基于颜色块的压缩格式，用于纹理压缩和图形渲染。BC1 是 DirectX 中的一种标准压缩格式，也被称为 DXT1。通过结合颜色压缩和 sRGB 颜色空间，BC1 sRGB 可以在保持图像质量的同时降低资源消耗和提高渲染性能。&lt;/li&gt;
+&lt;li&gt;BC1 sRGB 使用与 BC1 相同的压缩算法。然而，与普通的 BC1 相比，BC1 sRGB 在颜色解码时会先将颜色转换到 sRGB 颜色空间，以提供更准确的颜色表示。&lt;/li&gt;
+&lt;li&gt;sRGB 颜色空间是一种广泛用于显示设备的标准颜色空间，通过对每个颜色通道进行非线性调整，提供更好的亮度和颜色映射。sRGB 颜色空间可以提供更准确、更逼真的颜色表示。&lt;/li&gt;
+&lt;/ul&gt;
 </content>
         <category term="Unity" scheme="https://maikire.github.io/categories/Unity/" />
         <category term="UnityBasics" scheme="https://maikire.github.io/categories/Unity/UnityBasics/" />
