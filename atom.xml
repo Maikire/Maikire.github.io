@@ -209,7 +209,7 @@ Color：Blue&lt;/p&gt;
 &lt;li&gt;动态批处理（Dynamic Batching）：动态批处理适用于在运行时发生变化的游戏对象，如移动的敌人、玩家角色等。Unity 会自动将动态的游戏对象进行合并，减少渲染调用次数。动态批处理要求合并的游戏对象使用相同的材质和渲染设置，并且不超过 GPU 的限制。&lt;/li&gt;
 &lt;li&gt;GPU 实例化（GPU Instancing）：GPU 实例化可以用于同时渲染多个相似但独立的游戏对象，如草地、树木等。通过复制并共享网格数据，可以减少渲染状态的切换，提高性能。GPU 实例化要求使用支持它的着色器。&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;span class=&#34;label info&#34;&gt;开启批处理（以 2021.3 版本为例）：&lt;/span&gt;&lt;br /&gt;
+&lt;p&gt;&lt;span class=&#34;label info&#34;&gt;开启批处理：&lt;/span&gt;&lt;br /&gt;
 &lt;img data-src=&#34;TurnOnBatching.png&#34; alt=&#34;img&#34; /&gt;&lt;/p&gt;
 &lt;h2 id=&#34;静态批处理static-batching&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#静态批处理static-batching&#34;&gt;#&lt;/a&gt; 静态批处理（Static Batching）&lt;/h2&gt;
 &lt;ol&gt;
@@ -287,7 +287,7 @@ Color：Blue&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;CreateSpriteAtlas.png&#34; alt=&#34;img&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;可以在 Objects for Packing 中添加图片和文件夹，Unity 会自动分类并打包&lt;br /&gt;
 &lt;img data-src=&#34;SpriteAtlasSet.png&#34; alt=&#34;img&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;其它的设置可以去看官方文档&lt;/p&gt;
+&lt;p&gt;其它的设置可以去看&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9kb2NzLnVuaXR5LmNuL2NuLzIwMjIuMy9NYW51YWwvY2xhc3MtU3ByaXRlQXRsYXMuaHRtbA==&#34;&gt;官方文档&lt;/span&gt;&lt;/p&gt;
 &lt;h3 id=&#34;图集的使用&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#图集的使用&#34;&gt;#&lt;/a&gt; 图集的使用&lt;/h3&gt;
 &lt;p&gt;正常使用原图片即可，也可以用代码调用。&lt;/p&gt;
 &lt;figure class=&#34;highlight csharp&#34;&gt;&lt;figcaption data-lang=&#34;C#&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Image&lt;/span&gt; img&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token return-type class-name&#34;&gt;&lt;span class=&#34;token keyword&#34;&gt;void&lt;/span&gt;&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;Start&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;   &lt;span class=&#34;token class-name&#34;&gt;SpriteAtlas&lt;/span&gt; atlas &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; AssetDatabase&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token generic-method&#34;&gt;&lt;span class=&#34;token function&#34;&gt;LoadAssetAtPath&lt;/span&gt;&lt;span class=&#34;token generic class-name&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;SpriteAtlas&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;Assets/Atlas/MyAtlas.spriteatlas&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;   img&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;sprite &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; atlas&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;GetSprite&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;Fall1&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt; &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;sprite图片&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#sprite图片&#34;&gt;#&lt;/a&gt; sprite 图片&lt;/h2&gt;
@@ -318,6 +318,12 @@ Color：Blue&lt;/p&gt;
 &lt;li&gt;BC1 sRGB 使用与 BC1 相同的压缩算法。然而，与普通的 BC1 相比，BC1 sRGB 在颜色解码时会先将颜色转换到 sRGB 颜色空间，以提供更准确的颜色表示。&lt;/li&gt;
 &lt;li&gt;sRGB 颜色空间是一种广泛用于显示设备的标准颜色空间，通过对每个颜色通道进行非线性调整，提供更好的亮度和颜色映射。sRGB 颜色空间可以提供更准确、更逼真的颜色表示。&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h1 id=&#34;assetbundle&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#assetbundle&#34;&gt;#&lt;/a&gt; AssetBundle&lt;/h1&gt;
+&lt;p&gt;详细内容请看&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9kb2NzLnVuaXR5LmNuL2NuLzIwMjIuMy9NYW51YWwvQXNzZXRCdW5kbGVzSW50cm8uaHRtbA==&#34;&gt;官方文档&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Unity 的 AssetBundle（资源包）是一种用于打包和加载 Unity 项目中资产（Assets）的文件格式。它允许您将游戏中的资源（包括模型、纹理、声音、脚本等）打包成一个独立的文件，然后在运行时动态加载到游戏中。&lt;/p&gt;
+&lt;p&gt;AssetBundle 可以表示彼此之间的依赖关系。例如，一个 AssetBundle 中的材质可以引用另一个 AssetBundle 中的纹理。为了提高通过网络传输的效率，可以根据用例要求（LZMA 和 LZ4）选用内置算法选择来压缩 AssetBundle。&lt;/p&gt;
+&lt;p&gt;AssetBundle 可用于可下载内容（DLC），减小初始安装大小，加载针对最终用户平台优化的资源，以及减轻运行时内存压力。还可以将游戏的不同部分分开打包，例如将关卡资源和角色资源分别打包成不同的 AssetBundle，这样可以有效地管理和更新资产。此外，AssetBundle 还支持资源的版本控制和差异更新，可以减小游戏的安装包大小和网络带宽使用。&lt;/p&gt;
+&lt;p&gt;在 Unity 中，可以使用 AssetBundle API 来创建、加载和卸载 AssetBundle。您可以选择将 AssetBundle 保存在本地设备上，也可以将其上传到远程服务器供下载。无论是本地加载还是从远程服务器下载，Unity 都提供了简单易用的 API 来加载和使用 AssetBundle 中的资源。&lt;/p&gt;
 </content>
         <category term="Unity" scheme="https://maikire.github.io/categories/Unity/" />
         <category term="UnityBasics" scheme="https://maikire.github.io/categories/Unity/UnityBasics/" />
