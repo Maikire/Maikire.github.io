@@ -66,7 +66,7 @@
 &lt;/ul&gt;
 &lt;div class=&#34;note warning&#34;&gt;
 &lt;p&gt;缺点：消耗资源，状态数据越多，内存占用就越大。&lt;br /&gt;
-解决方法：将数据储存到存档文件中（.txt、.dat 等文件），由内存占用转变为磁盘占用。&lt;/p&gt;
+解决方法：将数据储存到文件中（.txt、.xml、.dat 等文件），由内存占用转变为磁盘占用。&lt;/p&gt;
 &lt;/div&gt;
 &lt;h1 id=&#34;类图&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#类图&#34;&gt;#&lt;/a&gt; 类图&lt;/h1&gt;
 &lt;p&gt;&lt;img data-src=&#34;ClassDiagram.png&#34; alt=&#34;img&#34; /&gt;&lt;/p&gt;
