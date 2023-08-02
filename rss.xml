@@ -10,8 +10,56 @@
         </author>
         <description></description>
         <language>zh-CN</language>
-        <pubDate>Wed, 02 Aug 2023 14:00:00 +0800</pubDate>
-        <lastBuildDate>Wed, 02 Aug 2023 14:00:00 +0800</lastBuildDate>
+        <pubDate>Wed, 02 Aug 2023 18:00:00 +0800</pubDate>
+        <lastBuildDate>Wed, 02 Aug 2023 18:00:00 +0800</lastBuildDate>
+        <item>
+            <guid isPermalink="true">https://maikire.github.io/2023/08/02/ConfigurationFile/YAML/</guid>
+            <title>YAML</title>
+            <link>https://maikire.github.io/2023/08/02/ConfigurationFile/YAML/</link>
+            <category term="ConfigurationFile" scheme="https://maikire.github.io/categories/ConfigurationFile/" />
+            <category term="ConfigurationFile" scheme="https://maikire.github.io/tags/ConfigurationFile/" />
+            <pubDate>Wed, 02 Aug 2023 18:00:00 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;yaml&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#yaml&#34;&gt;#&lt;/a&gt; YAML&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;YAML 是专门用来写配置文件的语言（它可以是 &amp;quot;YAML Ain&#39;t a Markup Language&amp;quot; 亦或是 &amp;quot;Yet Another Markup Language&amp;quot;）&lt;/li&gt;
+&lt;li&gt;YAML 数据能够存储在独立的.yml 文件中。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;yaml语法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#yaml语法&#34;&gt;#&lt;/a&gt; YAML 语法&lt;/h1&gt;
+&lt;h2 id=&#34;基本语法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#基本语法&#34;&gt;#&lt;/a&gt; 基本语法&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;大小写敏感&lt;/li&gt;
+&lt;li&gt;使用缩进表示层级关系&lt;/li&gt;
+&lt;li&gt;缩进不允许使用 tab，只允许空格&lt;/li&gt;
+&lt;li&gt;缩进的空格数不重要，只要相同层级的元素左对齐即可&lt;/li&gt;
+&lt;li&gt;&#39;#&#39; 表示注释&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;支持的数据类型&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#支持的数据类型&#34;&gt;#&lt;/a&gt; 支持的数据类型&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;对象：键值对的集合，又称为映射 / 哈希 / 字典&lt;/li&gt;
+&lt;li&gt;数组：一组按次序排列的值，又称为序列 / 列表&lt;/li&gt;
+&lt;li&gt;纯量：单个的、不可再分的值&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;yaml数组&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#yaml数组&#34;&gt;#&lt;/a&gt; YAML 数组&lt;/h2&gt;
+&lt;figure class=&#34;highlight yml&#34;&gt;&lt;figcaption data-lang=&#34;YAML&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;#以 - 开头的数组&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt; value1&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt; value2&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;#多维数组&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;key&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;value1&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; value2&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;...&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;yaml纯量&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#yaml纯量&#34;&gt;#&lt;/a&gt; YAML 纯量&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;字符串&lt;/li&gt;
+&lt;li&gt;布尔值&lt;/li&gt;
+&lt;li&gt;整数&lt;/li&gt;
+&lt;li&gt;浮点数&lt;/li&gt;
+&lt;li&gt;Null&lt;/li&gt;
+&lt;li&gt;时间&lt;/li&gt;
+&lt;li&gt;日期&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight yml&#34;&gt;&lt;figcaption data-lang=&#34;YAML&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;bool&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;token boolean important&#34;&gt;TRUE&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;#true, True 都可以&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;token boolean important&#34;&gt;FALSE&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;#false, False 都可以&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;float&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;2.33&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;6.8523015e+5&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;#可以使用科学计数法&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;int&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;233&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt; 0b1110_1001  &lt;span class=&#34;token comment&#34;&gt;#二进制表示&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;null&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token key atrule&#34;&gt;nodeName&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;node&#39;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token key atrule&#34;&gt;parent&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token null important&#34;&gt;~&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;#使用～表示 null&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;string&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt; 你好世界&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;15&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;Hello world&#39;&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;#可以使用双引号或者单引号包裹特殊字符&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;16&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt; line1&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;17&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      line2  &lt;span class=&#34;token comment&#34;&gt;#字符串可以拆成多行，每一行会被转化成一个空格&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;18&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;date&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;19&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;token datetime number&#34;&gt;2233-02-33&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;#日期必须使用 ISO 8601 格式，即 yyyy-MM-dd&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;20&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;datetime&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;21&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;token datetime number&#34;&gt;2233-02-33T12:02:33+08:00&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;#时间使用 ISO 8601 格式，时间和日期之间使用 T 连接，最后使用 + 代表时区&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;yaml对象&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#yaml对象&#34;&gt;#&lt;/a&gt; YAML 对象&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;格式 1：key: value&lt;/li&gt;
+&lt;li key1:=&#34;&#34; value1,=&#34;&#34; key2:=&#34;&#34; value2,=&#34;&#34; css-module=&#34;.&#34;&gt;格式 2：key:&lt;/li&gt;
+&lt;li&gt;格式 3：利用缩进表示层级关系&lt;/li&gt;
+&lt;li&gt;格式 4：问号加一个空格代表一个复杂的 key，配合一个冒号加一个空格代表一个 value&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight yml&#34;&gt;&lt;figcaption data-lang=&#34;YAML&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;#格式 3&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;key&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token key atrule&#34;&gt;child-key&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; value&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token key atrule&#34;&gt;child-key2&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; value2&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;#格式 4：对象的属性是一个数组，对应的值也是一个数组&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;?&lt;/span&gt;  &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt; key1&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;token key atrule&#34;&gt;key2&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt; value1&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt; value2&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;引用&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#引用&#34;&gt;#&lt;/a&gt; 引用&lt;/h2&gt;
+&lt;figure class=&#34;highlight yml&#34;&gt;&lt;figcaption data-lang=&#34;YAML&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;#&amp;amp; 引用和 * 别名&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;#&amp;amp; 用来建立锚点，&amp;lt;&amp;lt; 表示合并到当前数据，* 用来引用锚点。&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;defaults&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token important&#34;&gt;&amp;amp;defaults&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token key atrule&#34;&gt;child-key1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; value1&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;test&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token key atrule&#34;&gt;child-key2&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;token important&#34;&gt;&amp;amp;show&lt;/span&gt; value2&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt; value3&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;token important&#34;&gt;*show&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token key atrule&#34;&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token important&#34;&gt;*defaults&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;#相当于&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;defaults&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token key atrule&#34;&gt;child-key1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; value1&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;15&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;test&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;16&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token key atrule&#34;&gt;child-key2&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;17&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt; value2&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;18&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt; value3&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;19&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt; value2&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;20&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token key atrule&#34;&gt;child-key1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; value1&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt; ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">https://maikire.github.io/2023/08/02/ConfigurationFile/JSON/</guid>
             <title>JSON</title>
@@ -673,171 +721,6 @@ Color：Red&lt;/p&gt;
 Effect：Opaque&lt;br /&gt;
 Color：Blue&lt;/p&gt;
 &lt;/div&gt;
- ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">https://maikire.github.io/2023/07/21/Unity/UnityBasics/Unity%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/</guid>
-            <title>Unity性能优化</title>
-            <link>https://maikire.github.io/2023/07/21/Unity/UnityBasics/Unity%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/</link>
-            <category term="Unity" scheme="https://maikire.github.io/categories/Unity/" />
-            <category term="UnityBasics" scheme="https://maikire.github.io/categories/Unity/UnityBasics/" />
-            <category term="Unity" scheme="https://maikire.github.io/tags/Unity/" />
-            <pubDate>Fri, 21 Jul 2023 15:00:00 +0800</pubDate>
-            <description><![CDATA[ &lt;h1 id=&#34;性能优化&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#性能优化&#34;&gt;#&lt;/a&gt; 性能优化&lt;/h1&gt;
-&lt;p&gt;性能优化是指通过改进软件、系统或者代码的设计与实现，使其在执行过程中达到更高的运行效率和更低的资源消耗。性能优化旨在提升程序的响应速度、吞吐量、资源利用率以及用户体验。&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;label info&#34;&gt;性能优化涉及多个方面，包括但不限于以下几个方面：&lt;/span&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;算法优化：选择更高效的算法或者数据结构，减少计算量和存储空间的使用。&lt;/li&gt;
-&lt;li&gt;代码优化：改进代码的执行效率和资源利用，例如减少循环次数、消除冗余计算、合理使用缓存等。&lt;/li&gt;
-&lt;li&gt;并发优化：充分利用多核处理器和并发编程技术，提高程序的并发处理能力，减少资源竞争和延迟。&lt;/li&gt;
-&lt;li&gt;IO 优化：减少磁盘、网络和其他 IO 操作对性能的影响，采用缓存、异步 IO、批量处理等技术来提升效率。&lt;/li&gt;
-&lt;li&gt;数据库优化：优化数据库结构、索引设计、查询语句等，提高数据库操作的性能。&lt;/li&gt;
-&lt;li&gt;编译优化：对代码进行编译优化，通过改变程序的执行顺序、内存布局等，提高代码在特定平台上的运行效率。&lt;/li&gt;
-&lt;li&gt;资源管理：合理管理系统资源，如内存、线程、连接池等，避免资源耗尽或者资源浪费。&lt;/li&gt;
-&lt;li&gt;前端性能优化：优化前端网页加载速度和渲染效果，减少网络请求、压缩资源、使用缓存等。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;span class=&#34;label info&#34;&gt;Unity 性能优化：&lt;/span&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;批处理优化：尽量减少绘制调用和状态更改，通过合并对象渲染以减少批处理次数。例如，将多个对象合并成一个网格或使用对象池来避免频繁的资源创建和销毁。&lt;/li&gt;
-&lt;li&gt;纹理和材质优化：使用适当的纹理压缩格式，避免不必要的高分辨率纹理使用。使用纹理压缩格式，如 ETC2、ASTC 或 DXT，以减少内存消耗和加载时间。对于材质，避免过度复杂的着色器和纹理混合，只使用必要的纹理和着色特效。&lt;/li&gt;
-&lt;li&gt;碰撞检测和物理优化：合理使用物理引擎，并使用合适的碰撞体形状和触发器来减少不必要的碰撞检测。对于复杂的物理模拟，可以考虑使用近似算法或使用对象池。&lt;/li&gt;
-&lt;li&gt;脚本优化：优化脚本的性能，避免在 Update 等频繁调用的函数中进行昂贵的计算和对象分配。使用对象池、缓存计算结果以及避免频繁的字符串操作等技术可以提高性能。&lt;/li&gt;
-&lt;li&gt;空间分区和剔除：使用空间分区技术（如四叉树、网格切割等）来减少不必要的渲染和碰撞检测。使用遮挡剔除技术（如视锥剔除）来避免渲染不可见的物体。&lt;/li&gt;
-&lt;li&gt;优化资源加载：合理使用资源加载和卸载技术，避免在游戏运行时频繁加载和卸载大量资源。使用异步加载和资源缓存可以改善游戏的加载性能。&lt;/li&gt;
-&lt;li&gt;移动平台优化：针对移动平台的性能限制进行优化，如减少三角形数量、使用虚拟纹理、避免过多的特效等。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;性能优化是一个持续的过程，需要通过测试和分析来找到瓶颈和改进点。以上只是一些一般性的指导原则，具体的优化方法可能会因项目需求而有所不同。&lt;/p&gt;
-&lt;h1 id=&#34;绘制调用draw-calls&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#绘制调用draw-calls&#34;&gt;#&lt;/a&gt; 绘制调用（Draw Calls）&lt;/h1&gt;
-&lt;p&gt;CPU 准备数据 -- 调用 --&amp;gt; 图形学 API -- 调用 --&amp;gt; GPU 渲染&lt;br /&gt;
- CPU 准备数据 -- 调用 --&amp;gt; 图形学 API 的过程称之为一个 Draw Call&lt;br /&gt;
- 绘制调用是指将一批顶点数据发送给图形 API 进行绘制的操作。每个绘制调用都会产生一次 CPU 到 GPU 的数据传输以及绘制命令的开销。&lt;/p&gt;
-&lt;h1 id=&#34;批次batches&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#批次batches&#34;&gt;#&lt;/a&gt; 批次（Batches）&lt;/h1&gt;
-&lt;p&gt;每个批次可能对应多个绘制调用。在渲染图形时，Unity 会尽可能将相似的物体一次性绘制在一起，这样可以减少图形 API 的调用次数，提高渲染效率。这种将多个物体合并为一次绘制的过程就称为批次。&lt;/p&gt;
-&lt;h1 id=&#34;批处理技术&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#批处理技术&#34;&gt;#&lt;/a&gt; 批处理技术&lt;/h1&gt;
-&lt;p&gt;批处理技术用于优化渲染性能，通过减少渲染调用的次数来提高游戏的运行效率。&lt;/p&gt;
-&lt;p&gt;大多数情况下，批处理只会处理摄像机可见的内容（摄像机看不到的内容不会渲染）&lt;/p&gt;
-&lt;p&gt;Skinned Mesh Renderer 组件用于渲染具有骨骼动画或形变的模型，如角色模型。由于骨骼动画需要对模型的顶点和骨骼进行实时计算，这就导致了每个模型的顶点数据是动态变化的，无法进行批处理优化。&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;label info&#34;&gt;以下是 Unity 中常用的批处理技术：&lt;/span&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;静态批处理（Static Batching）：静态批处理适用于不会发生变化的静态游戏对象，如静态环境物体、地形等。Unity 会自动将静态的游戏对象合并为一个渲染批次，以减少渲染调用次数，提高性能。&lt;/li&gt;
-&lt;li&gt;动态批处理（Dynamic Batching）：动态批处理适用于在运行时发生变化的游戏对象，如移动的敌人、玩家角色等。Unity 会自动将动态的游戏对象进行合并，减少渲染调用次数。动态批处理要求合并的游戏对象使用相同的材质和渲染设置，并且不超过 GPU 的限制。&lt;/li&gt;
-&lt;li&gt;GPU 实例化（GPU Instancing）：GPU 实例化可以用于同时渲染多个相似但独立的游戏对象，如草地、树木等。通过复制并共享网格数据，可以减少渲染状态的切换，提高性能。GPU 实例化要求使用支持它的着色器。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;span class=&#34;label info&#34;&gt;开启批处理：&lt;/span&gt;&lt;br /&gt;
-&lt;img data-src=&#34;TurnOnBatching.png&#34; alt=&#34;img&#34; /&gt;&lt;/p&gt;
-&lt;h2 id=&#34;静态批处理static-batching&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#静态批处理static-batching&#34;&gt;#&lt;/a&gt; 静态批处理（Static Batching）&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;动态物体不能参与静态批处理&lt;/li&gt;
-&lt;li&gt;只有 Mesh Renderer 支持批处理&lt;/li&gt;
-&lt;li&gt;物体的变换（位置、旋转、缩放）需要相近&lt;/li&gt;
-&lt;li&gt;物体的网格可以不同&lt;/li&gt;
-&lt;li&gt;材质球没有 pass 数量限制&lt;/li&gt;
-&lt;li&gt;使用相同的材质球会进行批处理。使用不同的材质球也会进行批处理，但是材质球的不同会导致多增加几个批次（总批次数量仍然小于完全相同的动态物体）&lt;/li&gt;
-&lt;li&gt;模型没有顶点数量限制&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;动态批处理dynamic-batching&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#动态批处理dynamic-batching&#34;&gt;#&lt;/a&gt; 动态批处理（Dynamic Batching）&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;静态物体不能参与动态批处理&lt;/li&gt;
-&lt;li&gt;只有 Mesh Renderer 支持批处理&lt;/li&gt;
-&lt;li&gt;物体的变换（位置、旋转、缩放）需要相近&lt;/li&gt;
-&lt;li&gt;物体的网格必须相同&lt;/li&gt;
-&lt;li&gt;使用相同的只有一个 pass 的材质球&lt;/li&gt;
-&lt;li&gt;不同的版本和不同的渲染管线有不同的模型的顶点数量限制。&lt;br /&gt;
-例：在 2021.3 版本中，内置渲染管线，模型的顶点数在 225 个（包含 255）以内，添加多个同样的模型，不会增加渲染批次&lt;/li&gt;
-&lt;li&gt;如果模型的顶点数量超过了动态批处理的限制，可以将模型拆分成多个不超过限制的模型&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h1 id=&#34;不同的几何体增加的渲染批次数量的差异&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#不同的几何体增加的渲染批次数量的差异&#34;&gt;#&lt;/a&gt; 不同的几何体增加的渲染批次数量的差异&lt;/h1&gt;
-&lt;p&gt;在只有一个光源的条件下，不同的几何体（如 Unity 内置的 Sphere 和 Cube）增加的渲染批次数量是不同的。&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;label info&#34;&gt;主要有下几个因素：&lt;/span&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;顶点数量：不同几何体的顶点数量不同。更多的顶点数量意味着需要进行更多的渲染操作，从而增加了批次数量。例如，如果一个物体的网格细分的比较细，那么它的顶点数量就会更多。&lt;/li&gt;
-&lt;li&gt;三角形数量：除了顶点数量外，三角形数量也会对批次数量产生影响。不同几何体的三角形数量可能不同，这取决于其形状和细分程度。更多的三角形数量会导致更多的渲染操作和批次增加。&lt;/li&gt;
-&lt;li&gt;材质属性：不同几何体使用的材质属性可能不同，比如漫反射贴图（Diffuse Map）、法线贴图（Normal Map）等。如果两个几何体使用了不同的材质属性，那么它们可能会被分配到不同的渲染批次中。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h1 id=&#34;lodlevel-of-detail&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#lodlevel-of-detail&#34;&gt;#&lt;/a&gt; LOD（Level of Detail）&lt;/h1&gt;
-&lt;p&gt;是一种在 Unity 中用于优化渲染性能的技术。它通过根据物体的距离和大小动态地切换不同级别的细节模型来减少绘制的三角形数量和纹理使用，从而提高游戏的性能。因此，&lt;span class=&#34;blue&#34;&gt;它会以内存为代价来优化渲染&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;LOD 系统通常与静态网格渲染器（Static Mesh Renderer）一起使用。它通过创建一系列不同细节级别的网格模型，并将它们关联到同一个物体上的不同 LOD 组件中。这些 LOD 组件根据相机与物体之间的距离选择性地显示适当级别的细节。&lt;/p&gt;
-&lt;p&gt;通常，当物体离相机较远时，较低级别的细节模型会被渲染，以减少绘制的三角形数量和纹理使用。当物体靠近相机时，逐渐切换到更高级别的细节模型，以提供更多的细节和质量。&lt;/p&gt;
-&lt;p&gt;Unity 提供了内置的 LOD 系统，同时还支持第三方插件和脚本，可以通过简单设置和编辑器操作来实现 LOD 的创建和管理。&lt;/p&gt;
-&lt;h1 id=&#34;gpu-skinning&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#gpu-skinning&#34;&gt;#&lt;/a&gt; GPU Skinning&lt;/h1&gt;
-&lt;p&gt;GPU 蒙皮是将骨骼动画的计算工作从 CPU 转移到 GPU 进行计算的方法，通过减少 CPU 负载，可以支持更多的动画物体，并提高渲染性能。&lt;/p&gt;
-&lt;h1 id=&#34;灯光烘焙&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#灯光烘焙&#34;&gt;#&lt;/a&gt; 灯光烘焙&lt;/h1&gt;
-&lt;p&gt;灯光烘焙是将场景中的静态灯光（如热气球照明、天空盒照明等）以及静态物体的阴影预计算并存储在纹理中，并在运行时将该纹理应用到场景的物体上，这样在运行时就不需要在每个帧中动态计算光照，从而减少了渲染调用，提高渲染性能和运行时效率。&lt;/p&gt;
-&lt;p&gt;灯光烘焙可以减少渲染场景时的 Draw Call 数量，参与灯光烘焙（Lightmapping）的物体仍然会参与批处理（Batching）&lt;/p&gt;
-&lt;p&gt;注意，灯光烘焙适用于静态场景或静态物体，对于动态变化的物体或动态光源（如移动的角色或动态光源），灯光烘焙效果不会生效，仍然需要实时计算和渲染。因此，在设计场景时，需要根据场景的要求和性能需求来选择使用灯光烘焙。&lt;/p&gt;
-&lt;h1 id=&#34;unity支持的3dmax材质球类型和动画类型&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#unity支持的3dmax材质球类型和动画类型&#34;&gt;#&lt;/a&gt; Unity 支持的 3DMax 材质球类型和动画类型&lt;/h1&gt;
-&lt;p&gt;&lt;span class=&#34;label info&#34;&gt;材质球类型包括：&lt;/span&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;standard (标准材质)&lt;/li&gt;
-&lt;li&gt;Multi/sub-object (多维子材质)，需要注意每个子材质必须是标准材质。&lt;br /&gt;
-无灯光条件下，多维子材质中的子材质的数量就是 unity 中的渲染批次增加的数量，有灯光的条件下，渲染批次会更多。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;span class=&#34;label info&#34;&gt;动画类型包括：&lt;/span&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;关键帧动画&lt;/li&gt;
-&lt;li&gt;骨骼动画&lt;/li&gt;
-&lt;li&gt;CAT 插件&lt;/li&gt;
-&lt;li&gt;任意动画类型 -&amp;gt; 点缓存 -&amp;gt; 关键帧动画&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h1 id=&#34;图片&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#图片&#34;&gt;#&lt;/a&gt; 图片&lt;/h1&gt;
-&lt;p&gt;图片导入到 Unity 中，原图片与 Unity 中的图片分辨率不一样，因为 Unity 会将图片更改到 2^n（n&amp;gt;=1）的大小（不会超过自定义的最大值）。对于 sprite 图片，Unity 不会改变图片的大小，因为可以图集打包。&lt;/p&gt;
-&lt;p&gt;纹理、sprite 图片等资源会加载到显存中，如果显存不够用，就会占用内存。&lt;/p&gt;
-&lt;h2 id=&#34;图集打包&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#图集打包&#34;&gt;#&lt;/a&gt; 图集打包&lt;/h2&gt;
-&lt;p&gt;图集打包可以将 sprite 图片进行分类合并，会得到一个或多个图片集（一个图片集实际上就是一张图片），一个图片集只需要处理一次即可。相对于多个 sprite 图片进行单独处理，图集打包能够有效的降低 DrawCall 的数量。&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;label info&#34;&gt;.spriteatlas 文件是一种用于打包和管理精灵图集的文件格式，它包含了以下信息：&lt;/span&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;精灵图集的纹理信息：.spriteatlas 文件包含指向精灵图集纹理的引用。这些纹理可以是单个图片或多张图片组成的图集，它们通常被打包为一个纹理。&lt;/li&gt;
-&lt;li&gt;精灵信息：.spriteatlas 文件记录了精灵图集中每个精灵的名称、UV 坐标、边界框和其他属性信息。这些信息描述了如何从纹理中提取出单个精灵图像，并可以在游戏或应用程序中使用。&lt;/li&gt;
-&lt;li&gt;压缩和打包设置：.spriteatlas 文件可以包含有关精灵图集的压缩和打包设置的信息。例如，它可以指定要使用的纹理压缩格式、图集的最大尺寸限制、是否启用 mipmaps 等选项。&lt;/li&gt;
-&lt;li&gt;平台特定信息：.spriteatlas 文件还可以包含特定于目标平台的设置和优化信息。例如，对于不同的平台和设备，可以根据其性能和资源需求，设置不同的最大尺寸或压缩格式。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3 id=&#34;开启图集打包&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#开启图集打包&#34;&gt;#&lt;/a&gt; 开启图集打包&lt;/h3&gt;
-&lt;p&gt;默认是不开启的。&lt;br /&gt;
-需要在 Edit -&amp;gt; Project Settings -&amp;gt; Editor 设置中，将 SpritePacker 的 Mode 修改为 Always Enabled（总是启用）或者 Enabled For Builds（在构建时启用）&lt;br /&gt;
-&lt;img data-src=&#34;SpriteAtlas.png&#34; alt=&#34;img&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;在 Package Manager 中，找到 2D Sprite 包并导入&lt;br /&gt;
-&lt;img data-src=&#34;2DSprite.png&#34; alt=&#34;img&#34; /&gt;&lt;/p&gt;
-&lt;h3 id=&#34;图集的创建和设置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#图集的创建和设置&#34;&gt;#&lt;/a&gt; 图集的创建和设置&lt;/h3&gt;
-&lt;p&gt;&lt;img data-src=&#34;CreateSpriteAtlas.png&#34; alt=&#34;img&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;可以在 Objects for Packing 中添加图片和文件夹，Unity 会自动分类并打包&lt;br /&gt;
-&lt;img data-src=&#34;SpriteAtlasSet.png&#34; alt=&#34;img&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;其它的设置可以去看&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9kb2NzLnVuaXR5LmNuL2NuLzIwMjIuMy9NYW51YWwvY2xhc3MtU3ByaXRlQXRsYXMuaHRtbA==&#34;&gt;官方文档&lt;/span&gt;&lt;/p&gt;
-&lt;h3 id=&#34;图集的使用&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#图集的使用&#34;&gt;#&lt;/a&gt; 图集的使用&lt;/h3&gt;
-&lt;p&gt;正常使用原图片即可，也可以用代码调用。&lt;/p&gt;
-&lt;figure class=&#34;highlight csharp&#34;&gt;&lt;figcaption data-lang=&#34;C#&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Image&lt;/span&gt; img&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token return-type class-name&#34;&gt;&lt;span class=&#34;token keyword&#34;&gt;void&lt;/span&gt;&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;Start&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;   &lt;span class=&#34;token class-name&#34;&gt;SpriteAtlas&lt;/span&gt; atlas &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; AssetDatabase&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token generic-method&#34;&gt;&lt;span class=&#34;token function&#34;&gt;LoadAssetAtPath&lt;/span&gt;&lt;span class=&#34;token generic class-name&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;SpriteAtlas&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;Assets/Atlas/MyAtlas.spriteatlas&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;   img&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;sprite &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; atlas&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;GetSprite&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;Fall1&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt; &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;sprite图片&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#sprite图片&#34;&gt;#&lt;/a&gt; sprite 图片&lt;/h2&gt;
-&lt;p&gt;&lt;img data-src=&#34;Sprite.png&#34; alt=&#34;img&#34; /&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;431x448 (NPOT)：431x448 是分辨率，NPOT 则代表非 2 的幂次方（Non-Power-Of-Two）&lt;/li&gt;
-&lt;li&gt;0.6MB 表示图片在显存中的占用&lt;/li&gt;
-&lt;li&gt;431x448 (NPOT) 与 0.6MB 之间的数据表示压缩方式，需要根据不同的平台做选择&lt;/li&gt;
-&lt;li&gt;RGB8 是一种图像表示格式&lt;/li&gt;
-&lt;li&gt;sRGB 是一种标准的 RGB 颜色空间&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;纹理图片&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#纹理图片&#34;&gt;#&lt;/a&gt; 纹理图片&lt;/h2&gt;
-&lt;p&gt;&lt;img data-src=&#34;Texture.png&#34; alt=&#34;img&#34; /&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;RGB compressed DXT1|BC1 sRGB：使用 RGB compressed DXT1 或 BC1 sRGB&lt;/li&gt;
-&lt;li&gt;其他的属性与 sprite 图片相同&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;rgb-compressed-dxt1dxt5-和-bc1-srgb&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#rgb-compressed-dxt1dxt5-和-bc1-srgb&#34;&gt;#&lt;/a&gt; RGB compressed DXT1/DXT5 和 BC1 sRGB&lt;/h2&gt;
-&lt;p&gt;&lt;span class=&#34;label info&#34;&gt;RGB compressed DXT1/DXT5&lt;/span&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;RGB compressed DXT1（RGB 压缩的 DXT1）是一种图像压缩格式，使用 DXT 压缩算法对红色 (R)、绿色 (G)、蓝色 (B) 通道进行压缩。DXT1 是一种基于颜色块的压缩算法，常用于实时计算机图形和游戏开发中。&lt;/li&gt;
-&lt;li&gt;RGB compressed DXT1（也称为 BC1）压缩格式只支持颜色通道，不包含透明度信息。相对于 RGB compressed DXT5，它提供较低的压缩比和较低的图像质量。因此，它适用于不需要透明度信息的纹理，如大部分的颜色贴图、环境贴图等。&lt;/li&gt;
-&lt;li&gt;RGB compressed DXT5（也称为 BC3）压缩格式支持颜色和透明度通道，因此适用于包含透明度信息的纹理。它提供更高的压缩比和更高的图像质量，因为它使用更复杂的压缩算法来保持透明度通道的准确性。这使得 RGB compressed DXT5 适用于需要保留更多细节和精确度的纹理，如包含透明度的角色纹理、粒子纹理等。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;span class=&#34;label info&#34;&gt;BC1 sRGB&lt;/span&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;BC1 sRGB 是一种基于颜色块的压缩格式，用于纹理压缩和图形渲染。BC1 是 DirectX 中的一种标准压缩格式，也被称为 DXT1。通过结合颜色压缩和 sRGB 颜色空间，BC1 sRGB 可以在保持图像质量的同时降低资源消耗和提高渲染性能。&lt;/li&gt;
-&lt;li&gt;BC1 sRGB 使用与 BC1 相同的压缩算法。然而，与普通的 BC1 相比，BC1 sRGB 在颜色解码时会先将颜色转换到 sRGB 颜色空间，以提供更准确的颜色表示。&lt;/li&gt;
-&lt;li&gt;sRGB 颜色空间是一种广泛用于显示设备的标准颜色空间，通过对每个颜色通道进行非线性调整，提供更好的亮度和颜色映射。sRGB 颜色空间可以提供更准确、更逼真的颜色表示。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;assetbundle&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#assetbundle&#34;&gt;#&lt;/a&gt; AssetBundle&lt;/h1&gt;
-&lt;p&gt;详细内容请看&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9kb2NzLnVuaXR5LmNuL2NuLzIwMjIuMy9NYW51YWwvQXNzZXRCdW5kbGVzSW50cm8uaHRtbA==&#34;&gt;官方文档&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;Unity 的 AssetBundle（资源包）是一种用于打包和加载 Unity 项目中资产（Assets）的文件格式。它允许您将游戏中的资源（包括模型、纹理、声音、脚本等）打包成一个独立的文件，然后在运行时动态加载到游戏中。&lt;/p&gt;
-&lt;p&gt;AssetBundle 可以表示彼此之间的依赖关系。例如，一个 AssetBundle 中的材质可以引用另一个 AssetBundle 中的纹理。为了提高通过网络传输的效率，可以根据用例要求（LZMA 和 LZ4）选用内置算法选择来压缩 AssetBundle。&lt;/p&gt;
-&lt;p&gt;AssetBundle 可用于可下载内容（DLC），减小初始安装大小，加载针对最终用户平台优化的资源，以及减轻运行时内存压力。还可以将游戏的不同部分分开打包，例如将关卡资源和角色资源分别打包成不同的 AssetBundle，这样可以有效地管理和更新资产。此外，AssetBundle 还支持资源的版本控制和差异更新，可以减小游戏的安装包大小和网络带宽使用。&lt;/p&gt;
-&lt;p&gt;在 Unity 中，可以使用 AssetBundle API 来创建、加载和卸载 AssetBundle。您可以选择将 AssetBundle 保存在本地设备上，也可以将其上传到远程服务器供下载。无论是本地加载还是从远程服务器下载，Unity 都提供了简单易用的 API 来加载和使用 AssetBundle 中的资源。&lt;/p&gt;
  ]]></description>
         </item>
     </channel>
