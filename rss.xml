@@ -454,17 +454,26 @@ TcpClient 类主要用于实现基于 TCP 协议的网络通信，提供了 Conn
 &lt;p&gt;线程生命周期开始于 System.Threading.Thread 类的对象被创建时，结束于线程被终止或完成执行时。&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;label info&#34;&gt;下面列出了线程生命周期中的各种状态：&lt;/span&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;未启动状态：当线程实例被创建但 Start 方法未被调用时的状况。&lt;/li&gt;
-&lt;li&gt;就绪状态：当线程准备好运行并等待 CPU 周期时的状况。&lt;/li&gt;
-&lt;li&gt;不可运行状态：下面的几种情况下线程是不可运行的：
+&lt;li&gt;未启动状态（创建状态）：当线程实例被创建但 Start 方法未被调用时的状况（线程被创建时会先分配资源，包括内存空间和线程上下文等）。&lt;/li&gt;
+&lt;li&gt;就绪状态：当线程准备好运行并等待 CPU 周期时的状况（在就绪队列中，多个线程可以按照优先级等待 CPU 的分配）。&lt;/li&gt;
+&lt;li&gt;运行状态：当线程获得 CPU 时间片后，它就会进入运行状态，开始执行线程的代码。在运行状态中，线程会不断执行指令，直到遇到阻塞操作、时间片用尽或调度器切换到其他线程。&lt;/li&gt;
+&lt;li&gt;阻塞状态（不可运行状态）：线程可能会因为某些原因暂时无法继续执行，例如等待资源释放、等待输入输出操作完成等。当线程处于阻塞状态时，它不会占用 CPU 时间片，直到满足进一步执行的条件。&lt;br /&gt;
+下面的几种情况下线程是不可运行的：
 &lt;ul&gt;
 &lt;li&gt;已经调用 Sleep 方法&lt;/li&gt;
 &lt;li&gt;已经调用 Wait 方法&lt;/li&gt;
 &lt;li&gt;通过 I/O 操作阻塞&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;死亡状态：当线程已完成执行或已中止时的状况。&lt;/li&gt;
+&lt;li&gt;死亡状态（终止状态）：当线程已完成执行或已中止时的状况。&lt;br /&gt;
+可以通过以下两种方式终止线程：
+&lt;ul&gt;
+&lt;li&gt;线程的主体代码执行完毕。&lt;/li&gt;
+&lt;li&gt;显式调用 Thread 类的 Abort () 方法来中止线程。&lt;/li&gt;
 &lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;线程的生命周期并不是线性的，线程在不同的状态之间会进行切换。例如，一个线程可能从就绪状态进入运行状态，然后再由于等待某个条件而进入阻塞状态，最后再返回就绪状态等待调度器重新分配 CPU 时间片。&lt;/p&gt;
 &lt;h1 id=&#34;同步和异步&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#同步和异步&#34;&gt;#&lt;/a&gt; 同步和异步&lt;/h1&gt;
 &lt;p&gt;&lt;img data-src=&#34;synchronous-and-asynchronous.png&#34; alt=&#34;img&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;label info&#34;&gt;同步调用与异步调用的对比&lt;/span&gt;&lt;/p&gt;
