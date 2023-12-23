@@ -41,7 +41,7 @@
 当给定了一个 DrawCall 时，GPU 就会根据渲染状态（例如材质、纹理、着色器等）和所有输入的顶点数据来进行计算，最终输出成屏幕上显示的那些漂亮的像素。而这个计算过程，就是我们接下来要讲的 GPU 流水线。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&#34;gpu流水线&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#gpu流水线&#34;&gt;#&lt;/a&gt; GPU 流水线&lt;/h1&gt;
-&lt;p&gt;当 GPU 从 CPU 那里得到渲染命令后，就会进行一系列流水线操作，最终吧图元渲染到屏幕上。&lt;/p&gt;
+&lt;p&gt;当 GPU 从 CPU 那里得到渲染命令后，就会进行一系列流水线操作，最终把图元渲染到屏幕上。&lt;/p&gt;
 &lt;p&gt;GPU 渲染流水线如下图所示，颜色表示不同阶段的可配置型或可编程性：绿色表示该流水线阶段是完全可编程控制的，橙色表示该流水线阶段可以配置但是不可编程，蓝色表示该流水线阶段是由 GPU 固定实现的（开发者没有控制权）。除可选择的阶段以外，其他阶段必须实现。（部分名称在 OpenGL 和 DirectX 中不相同，本篇以 OpenGL 为例）&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;Pipeline_2.png&#34; alt=&#34;img&#34; /&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -693,7 +693,7 @@ Color: Blue&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;同步调用是在同一线程内&lt;/li&gt;
 &lt;li&gt;异步调用的底层机理是多线程&lt;/li&gt;
-&lt;li&gt;串行 = 同步 = 单线程，并行 = 异步 = 多线程&lt;/li&gt;
+&lt;li&gt;并发 / 串行 = 同步 = 单线程，并行 = 异步 = 多线程&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&#34;主线程&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#主线程&#34;&gt;#&lt;/a&gt; 主线程&lt;/h1&gt;
 &lt;p&gt;进程中第一个被执行的线程称为主线程。当 CSharp 程序开始执行时，主线程自动创建，使用 Thread 类创建的线程都是子线程。可以使用 Thread.CurrentThread 访问当前的线程。&lt;/p&gt;
