@@ -1464,6 +1464,7 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
 &lt;li&gt;分配和回收的过程复杂&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
+&lt;li&gt;文件分配表（FAT）&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;位示图法&lt;/p&gt;
 &lt;ul&gt;
@@ -2026,6 +2027,7 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
 &lt;ul&gt;
 &lt;li&gt;算法的 5 个重要特性：有穷性、确定性、有效性（可行性）、输入、输出&lt;/li&gt;
 &lt;li&gt;一个好的算法的目标：正确性、可读性、健壮性、高效率与低存储量需求&lt;/li&gt;
+&lt;li&gt;算法原地工作：不需要任何额外的辅助（注意：这里是 “辅助”，不是 “辅助空间”）&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;13-算法分析&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#13-算法分析&#34;&gt;#&lt;/a&gt; 1.3 算法分析&lt;/h2&gt;
 &lt;ul&gt;
@@ -2141,6 +2143,8 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
 &lt;h3 id=&#34;235-静态链表&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#235-静态链表&#34;&gt;#&lt;/a&gt; 2.3.5 静态链表&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;静态链表借助数组来描述链式存储结构，结点的指针域的值是下一结点的相对地址（数组下标），最后以 -1 或其他值域外的值表示结束&lt;/li&gt;
+&lt;li&gt;可以增加容纳元素的最大值，例如：新创建一个更大的数组，将旧数组的数据复制到新数组&lt;/li&gt;
+&lt;li&gt;插入和删除时不需要移动元素&lt;/li&gt;
 &lt;li&gt;静态链表操作起来明显不够方便，其存在的意义在于适用于不支持指针的语言&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;236-顺序表与链表的比较&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#236-顺序表与链表的比较&#34;&gt;#&lt;/a&gt; 2.3.6 顺序表与链表的比较&lt;/h3&gt;
@@ -2187,12 +2191,14 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
 &lt;li&gt;数学性质：n 个不同元素进栈，出栈元素不同排列的个数为 &lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mstyle displaystyle=&#34;true&#34; scriptlevel=&#34;0&#34;&gt;&lt;mfrac&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;mrow&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mo&gt;+&lt;/mo&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;/mrow&gt;&lt;/mfrac&gt;&lt;/mstyle&gt;&lt;msubsup&gt;&lt;mi&gt;C&lt;/mi&gt;&lt;mrow&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;/mrow&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;/msubsup&gt;&lt;mspace width=&#34;0.010000000000000002em&#34;/&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;\dfrac{1}{n + 1} C_{2n}^n \kern 0.1pt&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:2.09077em;vertical-align:-0.7693300000000001em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;&lt;span class=&#34;mopen nulldelimiter&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mfrac&#34;&gt;&lt;span class=&#34;vlist-t vlist-t2&#34;&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:1.32144em;&#34;&gt;&lt;span style=&#34;top:-2.314em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:3em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;&lt;span class=&#34;mord mathnormal&#34;&gt;n&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2222222222222222em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mbin&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2222222222222222em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;1&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;top:-3.23em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:3em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;frac-line&#34; style=&#34;border-bottom-width:0.04em;&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;top:-3.677em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:3em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;&lt;span class=&#34;mord&#34;&gt;1&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;vlist-s&#34;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.7693300000000001em;&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;mclose nulldelimiter&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;&lt;span class=&#34;mord mathnormal&#34; style=&#34;margin-right:0.07153em;&#34;&gt;C&lt;/span&gt;&lt;span class=&#34;msupsub&#34;&gt;&lt;span class=&#34;vlist-t vlist-t2&#34;&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.664392em;&#34;&gt;&lt;span style=&#34;top:-2.4518920000000004em;margin-left:-0.07153em;margin-right:0.05em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:2.7em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;sizing reset-size6 size3 mtight&#34;&gt;&lt;span class=&#34;mord mtight&#34;&gt;&lt;span class=&#34;mord mtight&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;mord mathnormal mtight&#34;&gt;n&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;top:-3.063em;margin-right:0.05em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:2.7em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;sizing reset-size6 size3 mtight&#34;&gt;&lt;span class=&#34;mord mathnormal mtight&#34;&gt;n&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;vlist-s&#34;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.24810799999999997em;&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.010000000000000002em;&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;，这就是卡特兰数。&lt;/li&gt;
 &lt;li&gt;栈的基本操作：
 &lt;ul&gt;
-&lt;li&gt;InitStack (&amp;amp;S) 初始化空栈 S&lt;/li&gt;
-&lt;li&gt;StackEmpty (S) 判断栈是否为空&lt;/li&gt;
-&lt;li&gt;Push (&amp;amp;S, x) 进栈，先加一，再入栈&lt;/li&gt;
-&lt;li&gt;Pop (&amp;amp;S, &amp;amp;x) 出栈，先出栈，再减一&lt;/li&gt;
+&lt;li&gt;InitStack (&amp;amp;S) { S.top = -1 } 初始化空栈&lt;/li&gt;
+&lt;li&gt;StackEmpty (S) { S.top == -1 } 判断栈是否为空&lt;/li&gt;
+&lt;li&gt;Push (&amp;amp;S, x) { S.data [++S.top] = x } 入栈，先加一，后入栈&lt;/li&gt;
+&lt;li&gt;Pop (&amp;amp;S, &amp;amp;x) { x = S.data [S.top--] } 出栈，先出栈，后减一&lt;/li&gt;
 &lt;li&gt;GetTop (S, &amp;amp;x) 读栈顶元素 x 并返回&lt;/li&gt;
 &lt;li&gt;DestroyStack (&amp;amp;S) 销毁栈，释放空间&lt;/li&gt;
+&lt;li&gt;S.top == MaxSize - 1 栈满&lt;/li&gt;
+&lt;li&gt;S.top + 1 栈长&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -2213,10 +2219,10 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
 &lt;li&gt;队列是一种只允许在表的一端插入，另一端删除的线性表。&lt;/li&gt;
 &lt;li&gt;队列的操作：
 &lt;ul&gt;
-&lt;li&gt;InitQueue (&amp;amp;Q) 初始化空队列 Q&lt;/li&gt;
+&lt;li&gt;InitQueue (&amp;amp;Q) 初始化空队列&lt;/li&gt;
 &lt;li&gt;QueueEmpty (Q) 判断队列是否为空&lt;/li&gt;
-&lt;li&gt;EnQueue (&amp;amp;Q, x) 入队，先存入，再加一&lt;/li&gt;
-&lt;li&gt;DeQueue (&amp;amp;Q, &amp;amp;x) 出队，先取出，再减一&lt;/li&gt;
+&lt;li&gt;EnQueue (&amp;amp;Q, x) 入队，先存入，后加一&lt;/li&gt;
+&lt;li&gt;DeQueue (&amp;amp;Q, &amp;amp;x) 出队，先取出，后加一&lt;/li&gt;
 &lt;li&gt;GetHead (Q, &amp;amp;x) 读队头元素 x 并返回&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
