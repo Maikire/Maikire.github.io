@@ -1,3 +1,3 @@
 # Blog
 
-This is a blog for taking [study notes](https://maikire.xyz/)
+This blog is for jotting down study notes.
