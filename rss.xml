@@ -254,9 +254,9 @@
 &lt;h2 id=&#34;21_2-进程的状态与转换&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#21_2-进程的状态与转换&#34;&gt;#&lt;/a&gt; 2.1_2 进程的状态与转换&lt;/h2&gt;
 &lt;p&gt;状态：&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;运行状态：占有 CPU，并在 CPU 上运行，单核只能一个进程（双核两个）（CPU √，其它资源 √）&lt;/li&gt;
-&lt;li&gt;就绪状态：已经具备运行条件，但是没有空闲的 CPU，暂时不能运行（CPU X，其它资源 √）&lt;/li&gt;
-&lt;li&gt;阻塞状态：等在某个事件的发生，暂时不能运行（CPU X，其它资源 X）&lt;/li&gt;
+&lt;li&gt;运行状态：占有 CPU，并在 CPU 上运行，单核只能一个进程（双核两个）（CPU ✔，其它资源 ✔）&lt;/li&gt;
+&lt;li&gt;就绪状态：已经具备运行条件，但是没有空闲的 CPU，暂时不能运行（CPU ✘，其它资源 ✔）&lt;/li&gt;
+&lt;li&gt;阻塞状态：等在某个事件的发生，暂时不能运行（CPU ✘，其它资源 ✘）&lt;/li&gt;
 &lt;li&gt;创建状态：创建 PCB，程序段，数据段&lt;/li&gt;
 &lt;li&gt;终止状态：回收内存，程序段，数据段，撤销 PCB&lt;/li&gt;
 &lt;/ul&gt;
