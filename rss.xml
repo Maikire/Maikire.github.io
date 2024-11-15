@@ -2197,6 +2197,7 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
 &lt;li&gt;数据的运算（算法）
 &lt;ul&gt;
 &lt;li&gt;算法包括运算的定义（取决于逻辑结构，体现算法功能）与实现（取决于存储结构，体现于操作步骤）&lt;/li&gt;
+&lt;li&gt;一个算法应该是问题求解步骤的描述&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;逻辑结构与存储结构的关系
@@ -2212,6 +2213,7 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
 &lt;p&gt;&lt;img data-src=&#34;21192565.jpg&#34; alt=&#34;img&#34; /&gt;&lt;/p&gt;
 &lt;h2 id=&#34;算法的基本概念&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#算法的基本概念&#34;&gt;#&lt;/a&gt; 算法的基本概念&lt;/h2&gt;
 &lt;ul&gt;
+&lt;li&gt;一个算法应该是问题求解步骤的描述&lt;/li&gt;
 &lt;li&gt;算法的 5 个重要特性：有穷性、确定性、有效性（可行性）、输入、输出&lt;/li&gt;
 &lt;li&gt;一个好的算法的目标：正确性、可读性、健壮性、高效率与低存储量需求&lt;/li&gt;
 &lt;li&gt;算法原地工作：不需要任何额外的辅助（注意：这里是 “辅助”，不是 “辅助空间”）&lt;/li&gt;
@@ -2522,12 +2524,12 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
 &lt;h3 id=&#34;数组&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#数组&#34;&gt;#&lt;/a&gt; 数组&lt;/h3&gt;
 &lt;p&gt;数组的概念&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;数组是由 n 个相同类型的数据元素构成的有限序列。&lt;/li&gt;
-&lt;li&gt;数组是线性表的推广。一维数组可视为一个线性表，二维数组可视为其元素均为定长线性表的线性表，以此类推。&lt;/li&gt;
+&lt;li&gt;数组是由 n 个相同类型的数据元素构成的有限序列&lt;/li&gt;
+&lt;li&gt;数组是线性表的推广。一维数组可视为一个线性表，二维数组可视为其元素均为定长线性表的线性表，以此类推&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;数组的存储结构&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;对于多维数组有两种映射方法：按行优先与按列优先。一般默认按行优先。&lt;/li&gt;
+&lt;li&gt;对于多维数组有两种映射方法：按行优先与按列优先。一般默认按行优先&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;特殊矩阵&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#特殊矩阵&#34;&gt;#&lt;/a&gt; 特殊矩阵&lt;/h3&gt;
 &lt;p&gt;特殊矩阵的压缩存储&lt;/p&gt;
@@ -2537,10 +2539,24 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
 &lt;/ul&gt;
 &lt;p&gt;稀疏矩阵的三元组表示&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;稀疏矩阵指非零元素个数远小于零个数的矩阵。&lt;/li&gt;
-&lt;li&gt;用三元组（行，列，值）来存储，或者十字链表法。&lt;/li&gt;
+&lt;li&gt;稀疏矩阵指非零元素个数远小于零个数的矩阵&lt;/li&gt;
+&lt;li&gt;用三元组（行，列，值）来存储，或者十字链表法&lt;/li&gt;
 &lt;li&gt;需要存储的数据包括：三元组、行数、列数、非 0 元素个数&lt;/li&gt;
 &lt;li&gt;失去随机存取功能，每次存取都需要遍历三元组表&lt;/li&gt;
+&lt;li&gt;注意三元组相关问题的写法
+&lt;ul&gt;
+&lt;li&gt;问题：写出矩阵对应的三元组线性表
+&lt;ul&gt;
+&lt;li&gt;答案的写法：((行，列，值)，...) 例如：( (1, 2, 3), (4, 5, 6), (7, 8, 9) )&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;问题：写出矩阵对应的三元组线性表的顺序储存
+&lt;ul&gt;
+&lt;li&gt;答案的写法：画一个 (n+1)*3 的表格，第一行的三个元素分别填写 矩阵的总行数、矩阵的总列数、非 0 元素个数，其余每行分别填写 行、列、值&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;广义表&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#广义表&#34;&gt;#&lt;/a&gt; 广义表&lt;/h2&gt;
 &lt;p&gt;广义表定义&lt;/p&gt;
@@ -2777,6 +2793,7 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
 &lt;li&gt;由前序 / 后序 / 层序遍历加上中序遍历，可唯一确定一棵二叉树&lt;/li&gt;
 &lt;li&gt;前序 / 层序遍历中根节点在最前，后序遍历中根节点在最后，由中序序列分辨出哪些结点在左边、哪些结点在右边，以此类推即可&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;注意：交换二叉树中所有的左右子树，使用后序遍历最合适。实际上，前序遍历和后序遍历都行，但答案给的是后序遍历，那就以答案为准（毕竟目标是得分，而不是实现这个功能）&lt;/p&gt;
 &lt;p&gt;中序遍历的代码&lt;/p&gt;
 &lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;inorderTraversal&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;TreeNode&lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt; root&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;root &lt;span class=&#34;token operator&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;nullptr&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token function&#34;&gt;inorderTraversal&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;root&lt;span class=&#34;token operator&#34;&gt;-&gt;&lt;/span&gt;left&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    cout &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&amp;lt;&lt;/span&gt; root&lt;span class=&#34;token operator&#34;&gt;-&gt;&lt;/span&gt;val &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34; &#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token function&#34;&gt;inorderTraversal&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;root&lt;span class=&#34;token operator&#34;&gt;-&gt;&lt;/span&gt;right&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h3 id=&#34;递归问题的非递归算法的设计&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#递归问题的非递归算法的设计&#34;&gt;#&lt;/a&gt; 递归问题的非递归算法的设计&lt;/h3&gt;
 &lt;ul&gt;
@@ -3829,6 +3846,7 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
 &lt;li&gt;堆排序适合关键字较多的情况，适合查找某一范围内的元素
 &lt;ul&gt;
 &lt;li&gt;例如：在 1 亿个数中选出前 100 个最大值，首先使用一个大小为 100 的数组，读入前 100 个数，建立小顶堆，而后依次读入余下的数，若小于堆顶则舍弃，否则用该数取代堆顶并重新调整堆，待数据读取完毕，堆中 100 个数即为所求&lt;/li&gt;
+&lt;li&gt;注意：若题目没有要求查找某一范围内的元素，则最适合大量元素的排序算法是归并排序&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;仅适用于顺序存储的线性表&lt;/li&gt;
@@ -3853,7 +3871,7 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
 &lt;ul&gt;
 &lt;li&gt;归并是指把两个（二路归并）或多个（多路归并）已经有序的序列合并为一个&lt;/li&gt;
 &lt;li&gt;该算法是采用分治法的一个非常典型的应用。将已有序的子序列合并，得到完全有序的序列；先使每个子序列有序，再使子序列段间有序&lt;/li&gt;
-&lt;li&gt;在较大数据进行排序时为了加快速度使用归并排序，用空间换时间&lt;/li&gt;
+&lt;li&gt;适合大量元素的排序，用空间换时间&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;二路归并排序&lt;/p&gt;
 &lt;ul&gt;
