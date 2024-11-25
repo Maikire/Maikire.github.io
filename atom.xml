@@ -15,7 +15,7 @@
         <link rel="alternate" href="https://maikire.github.io/2024/10/01/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
         <content type="html">&lt;p&gt;王道 408 操作系统笔记&lt;/p&gt;
 &lt;h1 id=&#34;操作系统概述&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#操作系统概述&#34;&gt;#&lt;/a&gt; 操作系统概述&lt;/h1&gt;
-&lt;h2 id=&#34;操作系统的概念-功能和目标&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#操作系统的概念-功能和目标&#34;&gt;#&lt;/a&gt; 操作系统的概念、功能和目标&lt;/h2&gt;
+&lt;h2 id=&#34;概念-功能-目标&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#概念-功能-目标&#34;&gt;#&lt;/a&gt; 概念、功能、目标&lt;/h2&gt;
 &lt;p&gt;概念&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;作为系统资源的管理者（基本功能）&lt;/li&gt;
@@ -29,7 +29,7 @@
 &lt;/li&gt;
 &lt;li&gt;程序接口：由系统调用组成&lt;/li&gt;
 &lt;li&gt;图形用户接口：GUI，图形用户界面&lt;/li&gt;
-&lt;li&gt;做题时首选系统调用和图形用户界面&lt;/li&gt;
+&lt;li&gt;首选 系统调用 和 图形用户界面&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;实现对计算机资源的扩充&lt;/li&gt;
@@ -43,7 +43,7 @@
 &lt;li&gt;开放性&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;img data-src=&#34;213081351.jpg&#34; alt=&#34;img&#34; /&gt;&lt;/p&gt;
-&lt;h2 id=&#34;操作系统的特征&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#操作系统的特征&#34;&gt;#&lt;/a&gt; 操作系统的特征&lt;/h2&gt;
+&lt;h2 id=&#34;特征&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#特征&#34;&gt;#&lt;/a&gt; 特征&lt;/h2&gt;
 &lt;p&gt;四大特征：并发、共享、虚拟、异步 （并发和共享是最基本的特征）&lt;/p&gt;
 &lt;p&gt;并发和并行&lt;/p&gt;
 &lt;ul&gt;
@@ -63,10 +63,10 @@
 &lt;/ul&gt;
 &lt;p&gt;异步&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;在多道程序环境下，允许多个程序并发执行，但由于资源有限，进程的执行不是一贯到底的，而是走走停停的，以不可预知的速度向前推进。&lt;/li&gt;
+&lt;li&gt;又称多道程序设计。在多道程序环境下，允许多个程序并发执行，但由于资源有限，进程的执行不是一贯到底的，而是走走停停的，以不可预知的速度向前推进。&lt;/li&gt;
 &lt;li&gt;只有系统拥有并发性，才有可能导致异步性。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;操作系统的发展与分类&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#操作系统的发展与分类&#34;&gt;#&lt;/a&gt; 操作系统的发展与分类&lt;/h2&gt;
+&lt;h2 id=&#34;发展-分类&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#发展-分类&#34;&gt;#&lt;/a&gt; 发展、分类&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;手工操作阶段
 &lt;ul&gt;
@@ -123,7 +123,7 @@
 &lt;/li&gt;
 &lt;li&gt;个人计算机操作系统&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;操作系统的运行机制与体系结构&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#操作系统的运行机制与体系结构&#34;&gt;#&lt;/a&gt; 操作系统的运行机制与体系结构&lt;/h2&gt;
+&lt;h2 id=&#34;运行机制-体系结构&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#运行机制-体系结构&#34;&gt;#&lt;/a&gt; 运行机制、体系结构&lt;/h2&gt;
 &lt;p&gt;运行机制&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;两种指令
@@ -160,7 +160,7 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;中断和异常&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#中断和异常&#34;&gt;#&lt;/a&gt; 中断和异常&lt;/h2&gt;
+&lt;h2 id=&#34;中断-异常&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#中断-异常&#34;&gt;#&lt;/a&gt; 中断、异常&lt;/h2&gt;
 &lt;p&gt;中断机制&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;中断机制是操作系统必须提供的功能，由操作系统介入，开展管理工作&lt;/li&gt;
@@ -462,7 +462,7 @@
 &lt;li&gt;广义的进程调度：选择一个进程 + 进程切换&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;进程切换的过程需要做什么？
+&lt;li&gt;进程切换的过程需要做什么
 &lt;ul&gt;
 &lt;li&gt;对原来运行进程各种数据的保存&lt;/li&gt;
 &lt;li&gt;对新的进程各种数据的恢复&lt;/li&gt;
@@ -549,6 +549,12 @@
 &lt;li&gt;优点：对各个进程相对公平（FCFS 的优点），每个新到达的进程都可以很快就得到响应（RR 的优点）；短进程只用较少的时间就可以完成（SPF 的优点）；不必实现估计进程的运行时间（避免用户作假）；可灵活地调整对各类进程的偏好程度，比如 CPU 密集型进程、IO 密集型进程（可以将 IO 密集型进程放回原队列）&lt;/li&gt;
 &lt;li&gt;默认抢占式、会饥饿&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;下列进程调度算法中，可能引起进程长时间得不到运行的算法是？&lt;br /&gt;
+A. 时间片轮转算法&lt;br /&gt;
+ B. 不可抢占式静态优先级算法&lt;br /&gt;
+ C. 可抢占式静态优先级算法&lt;br /&gt;
+ D. 不可抢占式动态优先级算法&lt;/p&gt;
+&lt;p&gt;答案：B&lt;/p&gt;
 &lt;h2 id=&#34;进程同步-进程互斥&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#进程同步-进程互斥&#34;&gt;#&lt;/a&gt; 进程同步、进程互斥&lt;/h2&gt;
 &lt;p&gt;1、进程同步&lt;/p&gt;
 &lt;ul&gt;
@@ -1060,6 +1066,8 @@
 &lt;li&gt;计算物理地址&lt;/li&gt;
 &lt;li&gt;访问物理内存&lt;/li&gt;
 &lt;/ol&gt;
+&lt;p&gt;举例：&lt;br /&gt;
+&lt;img data-src=&#34;21153559.jpg&#34; alt=&#34;img&#34; /&gt;&lt;/p&gt;
 &lt;h4 id=&#34;基本地址变换机构&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#基本地址变换机构&#34;&gt;#&lt;/a&gt; 基本地址变换机构&lt;/h4&gt;
 &lt;p&gt;硬件地址变换机构：一般用于动态重定位的情况。适用于页式存储管理、动态分区分配、页式虚拟存储管理&lt;/p&gt;
 &lt;p&gt;页表寄存器（PTR），存放页表（多级页表中只储存一级页表）的起始物理地址 F 和页表长度 M，进程未执行时，页表的起始地址和页表的长度放在进程控制块（PCB）中，当进程被调度时，操作系统内核会把它们放在页表寄存器中。&lt;/p&gt;
@@ -1088,7 +1096,7 @@
 &lt;p&gt;将长长的页表分页，为离散的分页创建一个表，称为页目录表、外层页表、顶级页表&lt;/p&gt;
 &lt;p&gt;页目录表中的编号是一级页号&lt;/p&gt;
 &lt;p&gt;逻辑地址结构：（一级页号、二级页号、页内偏移量）&lt;/p&gt;
-&lt;p&gt;3、如何实现地址变换？&lt;/p&gt;
+&lt;p&gt;3、如何实现地址变换&lt;/p&gt;
 &lt;p&gt;按照地址结构将逻辑地址拆分成三部分&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;从 PCB 中读出页目录表始址，根据一级页号查页目录表，找到下一级页表在内存中的存放位置&lt;/li&gt;
@@ -1104,7 +1112,7 @@
 &lt;li&gt;页表数量 = (a-b) / (b-c)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;基本分段存储管理方式&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#基本分段存储管理方式&#34;&gt;#&lt;/a&gt; 基本分段存储管理方式&lt;/h3&gt;
-&lt;p&gt;1、什么是分段？&lt;/p&gt;
+&lt;p&gt;1、什么是分段&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;进程的地址空间：按照程序自身的逻辑关系划分为若干个大小不等的段，每段有段名，每段从 0 开始编址，每段在内存中占据连续的内存空间，各段之间可以不相邻&lt;/li&gt;
 &lt;li&gt;段号的位数决定了每个进程最多可以分几个段，段内地址位数决定了每个段的最大长度是多少&lt;/li&gt;
@@ -1667,7 +1675,11 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
 &lt;li&gt;在 “文件系统的全局结构” 中有图片描述&lt;/li&gt;
 &lt;li&gt;找到文件名对应的目录项&lt;/li&gt;
 &lt;li&gt;检查访问权限&lt;/li&gt;
-&lt;li&gt;将目录项复制到系统的打开文件表中，将表项的索引号（文件描述符）返回给用户（进程）&lt;/li&gt;
+&lt;li&gt;将目录项复制到系统的打开文件表中，将表项的索引号（文件描述符）返回给用户（进程）
+&lt;ul&gt;
+&lt;li&gt;打开文件的主要作用就是装入文件目录项（一个 FCB 就是一个文件目录项）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;li&gt;在进程的打开文件表创建对应的表项&lt;/li&gt;
 &lt;li&gt;注意：文件没有读入内存&lt;/li&gt;
 &lt;li&gt;读写文件之前一定要先打开文件，进行 open 系统调用后，其他文件操作的系统调用不再使用文件名，而是使用索引号（文件描述符）&lt;/li&gt;
@@ -2644,6 +2656,7 @@ A. 防止未经核准的用户存取文件&lt;br /&gt;
 &lt;li&gt;每个子串的长度可以在 1 到 n 之间，每个长度为 k 的子串有 n-k+1 种可能。最后去掉字符串本身&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
+&lt;li&gt;注意：C 语言中，字符串（字符类型的数组）以 &#39;\0&#39; 为结尾，写代码的时候可能会用到&lt;/li&gt;
 &lt;li&gt;串的基本操作
 &lt;ul&gt;
 &lt;li&gt;StrAssign (&amp;amp;T, chars) 将串 T 赋值为 chars&lt;/li&gt;
@@ -2714,6 +2727,7 @@ A. 防止未经核准的用户存取文件&lt;br /&gt;
 &lt;li&gt;根结点：只有子结点没有父结点的结点。除了根结点外，树任何结点都有且仅有一个前驱。&lt;/li&gt;
 &lt;li&gt;分支结点：有子结点也有父结点的结点。&lt;/li&gt;
 &lt;li&gt;叶子结点：没有子结点只有父结点的结点。&lt;/li&gt;
+&lt;li&gt;非叶子结点：又称顶点，除了叶子结点以外的所有结点。&lt;/li&gt;
 &lt;li&gt;祖先：根结点到结点的路径上的任意结点都是该结点的祖先。&lt;/li&gt;
 &lt;li&gt;双亲：靠近根结点且最靠近该结点的结点。&lt;/li&gt;
 &lt;li&gt;兄弟：有共同双亲结点的结点。&lt;/li&gt;
@@ -3178,8 +3192,8 @@ A. 前序线索二叉树求前序后继&lt;br /&gt;
 &lt;ul&gt;
 &lt;li&gt;一维数组存顶点信息，二维数组（矩阵）存储边&lt;/li&gt;
 &lt;li&gt;设邻接矩阵为 &lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;A&lt;/mi&gt;&lt;mspace width=&#34;0.010000000000000002em&#34;/&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;A \kern 0.1pt&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.68333em;vertical-align:0em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34;&gt;A&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.010000000000000002em;&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;，&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;msup&gt;&lt;mi&gt;A&lt;/mi&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;/msup&gt;&lt;mspace width=&#34;0.010000000000000002em&#34;/&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;A^n \kern 0.1pt&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.68333em;vertical-align:0em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;&lt;span class=&#34;mord mathnormal&#34;&gt;A&lt;/span&gt;&lt;span class=&#34;msupsub&#34;&gt;&lt;span class=&#34;vlist-t&#34;&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.664392em;&#34;&gt;&lt;span style=&#34;top:-3.063em;margin-right:0.05em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:2.7em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;sizing reset-size6 size3 mtight&#34;&gt;&lt;span class=&#34;mord mathnormal mtight&#34;&gt;n&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.010000000000000002em;&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; 的元素 &lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;msup&gt;&lt;mi&gt;A&lt;/mi&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;/msup&gt;&lt;mo stretchy=&#34;false&#34;&gt;[&lt;/mo&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;mo stretchy=&#34;false&#34;&gt;]&lt;/mo&gt;&lt;mo stretchy=&#34;false&#34;&gt;[&lt;/mo&gt;&lt;mi&gt;j&lt;/mi&gt;&lt;mo stretchy=&#34;false&#34;&gt;]&lt;/mo&gt;&lt;mspace width=&#34;0.010000000000000002em&#34;/&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;A^n[i][j] \kern 0.1pt&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:1em;vertical-align:-0.25em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;&lt;span class=&#34;mord mathnormal&#34;&gt;A&lt;/span&gt;&lt;span class=&#34;msupsub&#34;&gt;&lt;span class=&#34;vlist-t&#34;&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.664392em;&#34;&gt;&lt;span style=&#34;top:-3.063em;margin-right:0.05em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:2.7em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;sizing reset-size6 size3 mtight&#34;&gt;&lt;span class=&#34;mord mathnormal mtight&#34;&gt;n&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;mopen&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;mclose&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;mopen&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34; style=&#34;margin-right:0.05724em;&#34;&gt;j&lt;/span&gt;&lt;span class=&#34;mclose&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.010000000000000002em;&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; 表示点 i 到点 j 长度为 n 的路径数目&lt;/li&gt;
-&lt;li&gt;无向图的邻接矩阵是对称矩阵&lt;/li&gt;
-&lt;li&gt;有向图的邻接矩阵：行出列入，第 i 行上所有元素之和等于顶点 i 的出度，第 i 列上所有元素之和等于顶点 i 的入度&lt;/li&gt;
+&lt;li&gt;无向图的邻接矩阵：对称矩阵&lt;/li&gt;
+&lt;li&gt;有向图的邻接矩阵：行出列入，第 i 行上所有非零元素的个数等于顶点 i 的出度，第 i 列上所有非零元素的个数等于顶点 i 的入度&lt;/li&gt;
 &lt;li&gt;创建矩阵的时间复杂度 &lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;O&lt;/mi&gt;&lt;mo stretchy=&#34;false&#34;&gt;(&lt;/mo&gt;&lt;msup&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;/msup&gt;&lt;mo stretchy=&#34;false&#34;&gt;)&lt;/mo&gt;&lt;mspace width=&#34;0.010000000000000002em&#34;/&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;O(n^2) \kern 0.1pt&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:1.064108em;vertical-align:-0.25em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34; style=&#34;margin-right:0.02778em;&#34;&gt;O&lt;/span&gt;&lt;span class=&#34;mopen&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;&lt;span class=&#34;mord mathnormal&#34;&gt;n&lt;/span&gt;&lt;span class=&#34;msupsub&#34;&gt;&lt;span class=&#34;vlist-t&#34;&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.8141079999999999em;&#34;&gt;&lt;span style=&#34;top:-3.063em;margin-right:0.05em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:2.7em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;sizing reset-size6 size3 mtight&#34;&gt;&lt;span class=&#34;mord mtight&#34;&gt;2&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;mclose&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.010000000000000002em;&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
