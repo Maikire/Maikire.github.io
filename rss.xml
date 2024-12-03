@@ -2074,7 +2074,7 @@ A. 防止未经核准的用户存取文件&lt;br /&gt;
 &lt;li&gt;磁道：磁盘划分为多个圆环，称为磁道&lt;/li&gt;
 &lt;li&gt;扇区：储存大小固定，一份扇区称为一个盘块。若按圆心角度划分扇区，越靠近圆心，数据密度越大&lt;/li&gt;
 &lt;li&gt;盘面：磁盘片&lt;/li&gt;
-&lt;li&gt;柱面：所有盘面上相对位置相同的磁道&lt;/li&gt;
+&lt;li&gt;柱面：所有盘面上相对位置（垂直面）相同的磁道&lt;/li&gt;
 &lt;li&gt;磁盘的物理地址：柱面号 盘面号 扇区号&lt;/li&gt;
 &lt;li&gt;磁盘的分类
 &lt;ul&gt;
@@ -2094,7 +2094,7 @@ A. 防止未经核准的用户存取文件&lt;br /&gt;
 &lt;/ul&gt;
 &lt;p&gt;计算&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;每个柱面有 a 个磁道，每个磁道有 b 个扇区，在磁盘中从 0 开始顺序储存，目标磁盘地址：d e f&lt;/li&gt;
+&lt;li&gt;每个柱面有 a 个磁道，每个磁道有 b 个扇区，数据在磁盘中从 0 开始顺序储存，目标所在的磁盘地址：(d, e, f)&lt;/li&gt;
 &lt;li&gt;每个柱面的扇区数 = a * b&lt;/li&gt;
 &lt;li&gt;磁盘地址对应第几个逻辑记录：d * a * b + e * b + f&lt;/li&gt;
 &lt;/ul&gt;
