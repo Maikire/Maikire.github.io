@@ -5510,7 +5510,7 @@ A. 先按 k1 进行直接插入排序，再按 k2 进行简单选择排序&lt;br
             <title>Shoka主题的数学公式</title>
             <link>https://maikire.github.io/2024/09/01/Shoka/Shoka%E4%B8%BB%E9%A2%98%E7%9A%84%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F/</link>
             <category term="Shoka" scheme="https://maikire.github.io/categories/Shoka/" />
-            <category term="Hexo" scheme="https://maikire.github.io/tags/Hexo/" />
+            <category term="Shoka" scheme="https://maikire.github.io/tags/Shoka/" />
             <pubDate>Sun, 01 Sep 2024 12:00:00 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;数学公式&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#数学公式&#34;&gt;#&lt;/a&gt; 数学公式&lt;/h1&gt;
 &lt;p&gt;本功能基于 markdown-it-katex&lt;br /&gt;
