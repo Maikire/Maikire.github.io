@@ -1241,7 +1241,7 @@
 &lt;li&gt;验证 URL： &lt;code&gt;(http[s]?://)?([\w-]+\.)+[\w-]+(/[\w|\.|/|?|%|&amp;amp;|=|_|-]*)?&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;验证一年的 12 个月： &lt;code&gt;^(0?[1-9]|1[0-2])$&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;验证一个月的 31 天： &lt;code&gt;^((0?[1-9])|((1|2)[0-9])|30|31)$&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;获取日期正则表达式： &lt;code&gt;\d&amp;#123;4&amp;#125;[年|\-|\.|\\|/]0?(1[0-2]|[1-9])[月|\-|\.|\\|/]\b0?(3[01]|[12][0-9]|[1-9])\b日?&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;获取日期正则表达式： &lt;code&gt;\d&amp;#123;4&amp;#125;[年\-\.\/\|\\]0?(1[0-2]|[1-9])[月\-\.\/\|\\]\b0?(3[01]|[12][0-9]|[1-9])\b日?&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;匹配双字节字符 (包括汉字在内)： &lt;code&gt;[^\x00-\xff]&lt;/code&gt;
 &lt;ul&gt;
 &lt;li&gt;可以用来计算字符串的长度（一个双字节字符长度计 2，ASCII 字符计 1）&lt;/li&gt;
