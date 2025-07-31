@@ -1126,8 +1126,14 @@
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
+&lt;h2 id=&#34;捕获组&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#捕获组&#34;&gt;#&lt;/a&gt; 捕获组&lt;/h2&gt;
+&lt;p&gt;捕获组是用来提取匹配字符串中的子串的一种机制&lt;br /&gt;
+一个括号就是一个捕获组，它不仅用于逻辑分组（改变运算优先级），还会自动捕获匹配的内容，供后续使用&lt;/p&gt;
+&lt;p&gt;所有捕获的组都按从左到右出现的顺序存储。缓冲区编号从 1 开始，最多可存储 99 个捕获的子表达式&lt;br /&gt;
+ group (0) 始终代表整个匹配结果，group (n) 表示第 n 个捕获组&lt;/p&gt;
+&lt;p&gt;命名捕获组：(?P&amp;lt;name&amp;gt; 表达式)，使用 group (&amp;quot;name&amp;quot;) 获取命名捕获组&lt;/p&gt;
 &lt;h2 id=&#34;反向引用&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#反向引用&#34;&gt;#&lt;/a&gt; 反向引用&lt;/h2&gt;
-&lt;p&gt;反向引用是正则表达式中一种用来 引用之前捕获的分组内容 的机制。它允许在模式中或替换操作中重复使用已经匹配的内容。所有捕获的组都按从左到右出现的顺序存储。缓冲区编号从 1 开始，最多可存储 99 个捕获的子表达式&lt;/p&gt;
+&lt;p&gt;反向引用是正则表达式中一种用来 引用之前捕获的分组内容 的机制。它允许在模式中或替换操作中重复使用已经匹配的内容&lt;/p&gt;
 &lt;p&gt;语法：使用 \1 \2 \3 ... 表示之前捕获的组&lt;/p&gt;
 &lt;p&gt;反向引用的最简单的、最有用的应用之一就是查找文本中两个相同且相邻的单词&lt;br /&gt;
 字符：A is is the ...&lt;br /&gt;
@@ -1218,6 +1224,7 @@
 &lt;/table&gt;
 &lt;h1 id=&#34;正则表达式应用&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#正则表达式应用&#34;&gt;#&lt;/a&gt; 正则表达式应用&lt;/h1&gt;
 &lt;ul&gt;
+&lt;li&gt;捕获组和非捕获组需要根据实际情况自行更改&lt;/li&gt;
 &lt;li&gt;验证用户名和密码（不同平台有不同的规则，以下只是举一个例子）
 &lt;ul&gt;
 &lt;li&gt;用户名： &lt;code&gt;^[a-zA-Z]\w&amp;#123;5,15&amp;#125;$&lt;/code&gt;&lt;/li&gt;
@@ -1228,7 +1235,7 @@
 &lt;li&gt;验证身份证号 (15 位或 18 位数字)： &lt;code&gt;\d&amp;#123;14&amp;#125;[[0-9],0-9xX]&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;验证 Email 地址： &lt;code&gt;\b[\w.%+-]+@[\w.-]+\.[a-zA-Z]&amp;#123;2,&amp;#125;\b&lt;/code&gt;  或  &lt;code&gt;^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;只能输入由数字和 26 个英文字母组成的字符串： &lt;code&gt;^[A-Za-z0-9]+$&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;整数或者小数： &lt;code&gt;^[-]?[0-9]+([.][0-9]+)&amp;#123;0,1&amp;#125;$&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;整数或小数： &lt;code&gt;^[-]?[0-9]+([.][0-9]+)&amp;#123;0,1&amp;#125;$&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;只能输入数字： &lt;code&gt;^[0-9]*$&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;只能输入 n 位的数字： &lt;code&gt;^\d&amp;#123;n&amp;#125;$&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;只能输入至少 n 位的数字： &lt;code&gt;^\d&amp;#123;n,&amp;#125;$&lt;/code&gt;&lt;/li&gt;
