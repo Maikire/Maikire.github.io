@@ -9,6 +9,14 @@
 
 
     <url>
+        <loc>https://maikire.xyz/2023/12/01/Unity/UnityShader/UnityShaderBasics/%E6%B8%B2%E6%9F%93%E7%AE%A1%E7%BA%BF/</loc>
+        <lastmod>2025-10-07T04:31:46.662Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://maikire.xyz/2023/05/05/Unity/UnityFramework/%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84ARPG%E6%8A%80%E8%83%BD%E6%A1%86%E6%9E%B6/</loc>
         <lastmod>2025-09-12T02:28:16.676Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -123,14 +131,6 @@
     <url>
         <loc>https://maikire.xyz/2025/01/20/Lua/Lua/</loc>
         <lastmod>2025-06-17T05:26:39.089Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://maikire.xyz/2023/12/01/Unity/UnityShader/UnityShaderBasics/%E6%B8%B2%E6%9F%93%E7%AE%A1%E7%BA%BF/</loc>
-        <lastmod>2025-06-15T09:52:03.229Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
