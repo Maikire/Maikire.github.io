@@ -9,6 +9,14 @@
 
 
     <url>
+        <loc>https://maikire.xyz/2023/12/01/Unity/UnityShader/UnityShaderBasics/%E6%B8%B2%E6%9F%93%E7%AE%A1%E7%BA%BF/</loc>
+        <lastmod>2025-11-17T14:10:29.955Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://maikire.xyz/2023/03/24/Unity/UnityFramework/%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84UnityUI%E6%A1%86%E6%9E%B6/</loc>
         <lastmod>2025-11-02T03:37:30.512Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -27,14 +35,6 @@
     <url>
         <loc>https://maikire.xyz/2024/01/18/Unity/UnityBasics/Unity%E5%A4%9A%E4%BA%BA%E8%81%94%E6%9C%BA%E5%9F%BA%E7%A1%80%EF%BC%88Netcode%EF%BC%89/</loc>
         <lastmod>2025-10-12T07:42:20.576Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://maikire.xyz/2023/12/01/Unity/UnityShader/UnityShaderBasics/%E6%B8%B2%E6%9F%93%E7%AE%A1%E7%BA%BF/</loc>
-        <lastmod>2025-10-09T12:47:14.093Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
