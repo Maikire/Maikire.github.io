@@ -70,6 +70,7 @@ nullptr 是一个可以隐式转换为任意指针类型的特殊类型&lt;br /&
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;函数指针是指向函数的指针变量，指针函数是返回值为指针的函数&lt;/li&gt;
+&lt;li&gt;不要滥用指针，否则会出现各种糟糕的情况，例如：指针指向的指针指向的函数指针指向的指针函数返回了一个指针&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;结构体&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#结构体&#34;&gt;#&lt;/a&gt; 结构体&lt;/h2&gt;
 &lt;ul&gt;
