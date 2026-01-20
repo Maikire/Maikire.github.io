@@ -9,6 +9,14 @@
 
 
     <url>
+        <loc>https://maikire.xyz/2023/07/30/CSharp/CSharpBasics/CSharp%E5%A4%9A%E7%BA%BF%E7%A8%8B/</loc>
+        <lastmod>2026-01-11T03:28:31.926Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://maikire.xyz/2023/03/20/CSharp/CSharpBasics/CSharp%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/</loc>
         <lastmod>2025-12-24T06:56:43.145Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -315,14 +323,6 @@
     <url>
         <loc>https://maikire.xyz/2023/08/14/Unity/UnityToolClass/%E8%B7%AF%E5%BE%84%E5%8A%A9%E6%89%8B/</loc>
         <lastmod>2024-01-13T04:30:57.040Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://maikire.xyz/2023/07/30/CSharp/CSharpBasics/CSharp%E5%A4%9A%E7%BA%BF%E7%A8%8B/</loc>
-        <lastmod>2023-12-22T12:59:42.929Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
