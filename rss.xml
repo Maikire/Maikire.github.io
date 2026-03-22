@@ -123,20 +123,19 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://maikire.xyz/2026/02/26/Unity/UnityRender/UnityShader/Unity%20URP%20BRDF%20shader/</guid>
+            <guid isPermalink="true">https://maikire.xyz/2026/02/26/Unity/UnityRender/UnityShaderBasics/Unity%20URP%20BRDF%20shader/</guid>
             <title>Unity URP BRDF shader</title>
-            <link>https://maikire.xyz/2026/02/26/Unity/UnityRender/UnityShader/Unity%20URP%20BRDF%20shader/</link>
+            <link>https://maikire.xyz/2026/02/26/Unity/UnityRender/UnityShaderBasics/Unity%20URP%20BRDF%20shader/</link>
             <category term="Unity" scheme="https://maikire.xyz/categories/Unity/" />
             <category term="UnityRender" scheme="https://maikire.xyz/categories/Unity/UnityRender/" />
-            <category term="UnityShader" scheme="https://maikire.xyz/categories/Unity/UnityRender/UnityShader/" />
+            <category term="UnityShaderBasics" scheme="https://maikire.xyz/categories/Unity/UnityRender/UnityShaderBasics/" />
             <category term="Unity" scheme="https://maikire.xyz/tags/Unity/" />
             <category term="UnityShader" scheme="https://maikire.xyz/tags/UnityShader/" />
             <pubDate>Thu, 26 Feb 2026 12:00:00 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;unity-urp-brdf-shader&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#unity-urp-brdf-shader&#34;&gt;#&lt;/a&gt; Unity URP BRDF shader&lt;/h1&gt;
 &lt;p&gt;本篇主要内容是在 Unity URP 中实现 BRDF shader&lt;/p&gt;
 &lt;p&gt;BRDF 理论部分在&lt;a href=&#34;https://maikire.xyz/2026/02/21/ComputerGraphics/Physics-Based%20Rendering/%E5%8F%8C%E5%90%91%E5%8F%8D%E5%B0%84%E5%88%86%E5%B8%83%E5%87%BD%E6%95%B0%EF%BC%88BRDF%EF%BC%89&#34;&gt;这篇文章&lt;/a&gt;中讲解。&lt;/p&gt;
-&lt;p&gt;Unity 版本：Unity 6.0&lt;br /&gt;
- 渲染路径：Forward / Forward+&lt;/p&gt;
+&lt;p&gt;渲染路径：Forward / Forward+&lt;/p&gt;
 &lt;h1 id=&#34;代码&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#代码&#34;&gt;#&lt;/a&gt; 代码&lt;/h1&gt;
 &lt;h2 id=&#34;brdf&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#brdf&#34;&gt;#&lt;/a&gt; BRDF&lt;/h2&gt;
 &lt;ul&gt;
