@@ -184,8 +184,8 @@
             <category term="Physics-Based Rendering" scheme="https://maikire.xyz/tags/Physics-Based-Rendering/" />
             <pubDate>Sat, 21 Feb 2026 12:00:00 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;双向反射分布函数brdf&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#双向反射分布函数brdf&#34;&gt;#&lt;/a&gt; 双向反射分布函数（BRDF）&lt;/h1&gt;
-&lt;p&gt;双向反射分布函数（BRDF）是一个用于描述表面反射特性的函数。它是在&lt;a href=&#34;https://maikire.xyz/2026/02/20/ComputerGraphics/Physics-Based%20Rendering/%E5%9F%BA%E4%BA%8E%E7%89%A9%E7%90%86%E7%9A%84%E6%B8%B2%E6%9F%93&#34;&gt;微平面理论&lt;/a&gt;上建立的。&lt;/p&gt;
-&lt;p&gt;本篇仅包含理论，&lt;a href=&#34;https://maikire.xyz/2026/02/26/Unity/UnityRender/UnityShader/Unity%20URP%20BRDF%20shader/&#34;&gt;这篇文章&lt;/a&gt;展示了如何在 Unity 中实现 BRDF。&lt;/p&gt;
+&lt;p&gt;双向反射分布函数（BRDF）是一个用于描述表面反射特性的函数。它是在&lt;a href=&#34;https://maikire.xyz/2026/02/20/ComputerGraphics/Physics-Based%20Rendering/%E5%9F%BA%E4%BA%8E%E7%89%A9%E7%90%86%E7%9A%84%E6%B8%B2%E6%9F%93&#34;&gt;微平面理论&lt;/a&gt;上建立的&lt;/p&gt;
+&lt;p&gt;本篇仅包含理论，&lt;a href=&#34;https://maikire.xyz/2026/02/26/Unity/UnityRender/UnityShaderBasics/Unity%20URP%20BRDF%20shader/&#34;&gt;这篇文章&lt;/a&gt;展示了如何在 Unity 中实现 BRDF&lt;/p&gt;
 &lt;p&gt;在下文中，我们约定：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;n&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.43056em;vertical-align:0em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34;&gt;n&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; 为宏观表面法线&lt;/li&gt;
