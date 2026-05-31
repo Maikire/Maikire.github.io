@@ -9,6 +9,14 @@
 
 
     <url>
+        <loc>https://maikire.xyz/2026/02/20/ComputerGraphics/Physics-Based%20Rendering/%E5%9F%BA%E4%BA%8E%E7%89%A9%E7%90%86%E7%9A%84%E6%B8%B2%E6%9F%93/</loc>
+        <lastmod>2026-05-31T09:47:41.753Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://maikire.xyz/2023/03/20/DesignPatterns/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</loc>
         <lastmod>2026-05-09T13:42:49.341Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -123,14 +131,6 @@
     <url>
         <loc>https://maikire.xyz/2026/03/01/ComputerGraphics/Physics-Based%20Rendering/Kulla-Conty%20%E5%A4%9A%E6%AC%A1%E6%95%A3%E5%B0%84%E8%A1%A5%E5%81%BF/</loc>
         <lastmod>2026-03-02T12:48:02.564Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://maikire.xyz/2026/02/20/ComputerGraphics/Physics-Based%20Rendering/%E5%9F%BA%E4%BA%8E%E7%89%A9%E7%90%86%E7%9A%84%E6%B8%B2%E6%9F%93/</loc>
-        <lastmod>2026-02-26T12:53:26.608Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 

@@ -334,11 +334,13 @@ M1001 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/
 &lt;/ul&gt;
 &lt;h1 id=&#34;brdf&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#brdf&#34;&gt;#&lt;/a&gt; BRDF&lt;/h1&gt;
 &lt;p&gt;双向反射分布函数（BRDF）是一个用于描述表面反射特性的函数。它是在微平面理论上建立的。&lt;/p&gt;
-&lt;p&gt;BRDF 包括漫反射和镜面反射&lt;br /&gt;
-漫反射与方向无关，均匀散射。&lt;br /&gt;
-镜面反射依赖方向，能量集中在接近镜面反射方向。理想镜面是 delta 分布。真实材质常用微表面模型，比如 Cook-Torrance&lt;br /&gt;
- 镜面项通常包含：法线分布函数、菲涅尔、几何遮挡&lt;/p&gt;
-&lt;p&gt;详细内容请看&lt;a href=&#34;https://maikire.xyz/2026/02/21/ComputerGraphics/Physics-Based%20Rendering/BRDF/&#34;&gt;这篇文章&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;BRDF 包括漫反射和镜面反射&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;漫反射与方向无关，均匀散射&lt;/li&gt;
+&lt;li&gt;镜面反射依赖方向，能量集中在接近镜面反射方向。理想镜面是 delta 分布。真实材质常用微表面模型，比如 Cook-Torrance&lt;/li&gt;
+&lt;li&gt;镜面项通常包含：法线分布函数、菲涅尔、几何遮挡&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;详细内容请看&lt;a href=&#34;https://maikire.xyz/2026/02/21/ComputerGraphics/Physics-Based%20Rendering/%E5%8F%8C%E5%90%91%E5%8F%8D%E5%B0%84%E5%88%86%E5%B8%83%E5%87%BD%E6%95%B0%EF%BC%88BRDF%EF%BC%89&#34;&gt;这篇文章&lt;/a&gt;。&lt;/p&gt;
 &lt;h1 id=&#34;色彩空间&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#色彩空间&#34;&gt;#&lt;/a&gt; 色彩空间&lt;/h1&gt;
 &lt;h2 id=&#34;线性空间&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#线性空间&#34;&gt;#&lt;/a&gt; 线性空间&lt;/h2&gt;
 &lt;p&gt;大多数贴图和屏幕默认都在 sRGB 空间。sRGB 是一种带 Gamma 校正的颜色空间。简单说，它对暗部更敏感，对亮部压缩得更厉害。这是为了适应人眼的感知。但问题是光的物理叠加是线性的，而 sRGB 不是。&lt;br /&gt;
@@ -349,7 +351,7 @@ M1001 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/
 &lt;p&gt;举例：在 Gamma 模式下，把两个 50% 灰叠加，结果比你预期亮很多。在线性空间里，才是物理正确的叠加。&lt;/p&gt;
 &lt;h2 id=&#34;aces-色彩空间&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#aces-色彩空间&#34;&gt;#&lt;/a&gt; ACES 色彩空间&lt;/h2&gt;
 &lt;p&gt;ACES 的全名是 Academy Color Encoding System。它是 Academy of Motion Picture Arts and Sciences 推出的电影工业色彩管理体系。目的不是更好看，而是跨设备一致。&lt;br /&gt;
-电影制作里有个问题：摄影机拍出来一个色域，特效软件一个色域，影院投影仪又一个色域。如果没有统一标准，调色师会崩溃。&lt;/p&gt;
+电影制作里有个问题：摄影机拍出来一个色域，特效软件一个色域，影院投影仪又一个色域，没有统一标准。&lt;/p&gt;
 &lt;p&gt;ACES 的核心思想&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;第一层：超大色域
