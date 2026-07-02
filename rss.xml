@@ -355,7 +355,7 @@ M1001 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/
 &lt;p&gt;现代引擎（比如 Unity 和 Unreal Engine）默认都推荐线性工作流。尤其是在做 PBR（基于物理的渲染）时。&lt;/p&gt;
 &lt;p&gt;举例：在 Gamma 模式下，把两个 50% 灰叠加，结果比你预期亮很多。在线性空间里，才是物理正确的叠加。&lt;/p&gt;
 &lt;h2 id=&#34;aces-色彩空间&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#aces-色彩空间&#34;&gt;#&lt;/a&gt; ACES 色彩空间&lt;/h2&gt;
-&lt;p&gt;ACES 的全名是 Academy Color Encoding System。它是 Academy of Motion Picture Arts and Sciences 推出的电影工业色彩管理体系。目的不是更好看，而是跨设备一致。&lt;br /&gt;
+&lt;p&gt;ACES 的全名是 Academy Color Encoding System。它是 Academy of Motion Picture Arts and Sciences 推出的电影工业色彩管理体系。目的是跨设备一致。&lt;br /&gt;
 电影制作里有个问题：摄影机拍出来一个色域，特效软件一个色域，影院投影仪又一个色域，没有统一标准。&lt;/p&gt;
 &lt;p&gt;ACES 的核心思想&lt;/p&gt;
 &lt;ul&gt;
