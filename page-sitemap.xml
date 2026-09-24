@@ -10,6 +10,15 @@
     
     
     <url>
+        <loc>https://maikire.xyz/games/</loc>
+        <lastmod>2026-09-24T15:03:17.517Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    
+    
+    <url>
         <loc>https://maikire.xyz/about/</loc>
         <lastmod>2025-12-09T00:44:03.345Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -21,15 +30,6 @@
     <url>
         <loc>https://maikire.xyz/friends/</loc>
         <lastmod>2025-09-09T13:21:19.973Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    
-    
-    
-    <url>
-        <loc>https://maikire.xyz/games/</loc>
-        <lastmod>2025-09-09T13:11:34.474Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
