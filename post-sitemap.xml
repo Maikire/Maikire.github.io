@@ -9,6 +9,22 @@
 
 
     <url>
+        <loc>https://maikire.xyz/2026/10/15/Unity/UnityFramework/%E5%AD%98%E6%A1%A3%E6%A1%86%E6%9E%B6/</loc>
+        <lastmod>2026-10-23T10:03:18.137Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://maikire.xyz/2023/06/12/Unity/UnityToolClass/%E7%BA%BF%E7%A8%8B%E4%BA%A4%E5%8F%89%E8%AE%BF%E9%97%AE%E5%8A%A9%E6%89%8B/</loc>
+        <lastmod>2026-10-15T14:23:17.874Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://maikire.xyz/2025/08/20/Unity/UnityFramework/%E8%A1%8C%E4%B8%BA%E6%A0%91/</loc>
         <lastmod>2026-10-09T15:58:06.833Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -123,14 +139,6 @@
     <url>
         <loc>https://maikire.xyz/2023/08/14/Unity/UnityToolClass/%E8%B7%AF%E5%BE%84%E5%8A%A9%E6%89%8B/</loc>
         <lastmod>2026-03-13T14:14:00.536Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://maikire.xyz/2023/06/12/Unity/UnityToolClass/%E7%BA%BF%E7%A8%8B%E4%BA%A4%E5%8F%89%E8%AE%BF%E9%97%AE%E5%8A%A9%E6%89%8B/</loc>
-        <lastmod>2026-03-11T11:28:57.508Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
